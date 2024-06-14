@@ -1,0 +1,38 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Debugger: Remote Attach",
+            "type": "debugpy",
+            "request": "launch",
+            "pathMappings": [
+                {
+                    "localRoot": "${workspaceFolder}",
+                    "remoteRoot": "."
+                }
+            ],
+            "justMyCode": false,
+            // "program": "${workspaceFolder}/tools/train.py",
+            "program": "${workspaceFolder}/tools/test.py",
+            "python": "/opt/conda/envs/bevfusion/bin/python",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}/projects:${env:PYTHONPATH}",
+                "CUDA_VISIBLE_DEVICES": "1"
+                // "MASTER_HOST": "14568"
+                // "MASTER_ADDR": "tcp://123.456.78.9:23456"
+            },
+            "args": [
+                // "runs/when2com/configs.yaml",
+                // "configs/nuscenes/det/centerhead/lssfpn/camera/256x704/swint/default.yaml",
+                "configs/nuscenes/det/centerhead/lssfpn/camera/256x704/resnet/default.yaml",
+                // "--model.encoders.camera.backbone.init_cfg.checkpoint",
+                // "pretrained/swint-nuimages-pretrained.pth",
+                // "--run-dir",
+                // "runs/test"
+                "runs/test/epoch_24.pth",
+                "--eval",
+                "bbox"
+            ]
+        } 
+    ]
+}

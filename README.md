@@ -73,6 +73,17 @@ torchpack dist-run -np 4  python tools/test.py configs/nuscenes/det/centerhead/l
 ## Main Results
 ### 3D Object Detection (UAV3D val)
 
+<table>
+  <tr>
+    <th style="font-size:20px;">Header 1</th>
+    <th style="font-size:20px;">Header 2</th>
+  </tr>
+  <tr>
+    <td style="font-size:15px;">Content 1</td>
+    <td style="font-size:15px;">Content 2</td>
+  </tr>
+</table>
+
 |  Model  | Backbone | Size  | mAP↑  | NDS↑  | mATE↓  | mASE↓  | mAOE↓  | checkpoint  | log  |
 | :--: | :-------: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
 | PETR|    Res-50   |  704×256 | 0.512  |  0.571 |  0.741  | 0.173  |  0.072 | link  |  link |     

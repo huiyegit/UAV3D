@@ -22,15 +22,27 @@ After downloading the data, please put the data in the following structure:
 ```
 ## Train & inference
 ### Single UAV 3D object detection
-#### PETR
+#### Baseline PETR
 ```bash
 cd perception/PETR
 ```
-You can train the model following:
+Training:
 ```bash
 tools/dist_train.sh projects/configs/petr/petr_r50dcn_gridmask_p4.py 4 --work-dir work_dirs/petr_r50dcn_gridmask_p4/
 ```
-You can evaluate the model following:
+Evaluation:
 ```bash
 tools/dist_test.sh projects/configs/petr/petr_r50dcn_gridmask_p4.py work_dirs/petr_r50dcn_gridmask_p4/latest.pth 8 --eval bbox
+```
+#### Baseline BEVFusion
+```bash
+cd perception/bevfusion
+```
+Training:
+```bash
+torchpack dist-run -np 4  python tools/train.py configs/nuscenes/det/centerhead/lssfpn/camera/256x704/resnet/default.yaml    --run-dir runs/resnet50
+```
+Evaluation:
+```bash
+torchpack dist-run -np 4  python tools/test.py configs/nuscenes/det/centerhead/lssfpn/camera/256x704/resnet/default.yaml   runs/resnet50/epoch_24.pth   --eval bbox
 ```

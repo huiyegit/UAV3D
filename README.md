@@ -73,8 +73,8 @@ torchpack dist-run -np 4  python tools/test.py configs/nuscenes/det/centerhead/l
 ## Main Results
 ### 3D Object Detection (UAV3D val)
 
-|   Model   | Backbone | Size  | mAP↑  | NDS↑  | mATE↓  | mASE↓  | mAOE↓  |
-| :-------: | :------: | :--: | :--: | :--: | :--: | :--: | :--: |
-| PETR|    82.72   |  81.35  | 77.65  |  76.33 |  81.35  | 77.65  |  76.33 |
-| BEVFusion | 86.04    |  84.76 | 81.22  |  79.97 |  81.35  | 77.65  |  76.33 |
-| DETR3D | 86.04    |  84.76 | 81.22  |  79.97 |  81.35  | 77.65  |  76.33 |
+|   Model   | Backbone | Size  | mAP↑  | NDS↑  | mATE↓  | mASE↓  | mAOE↓  | checkpoint  | log  |
+| :-------: | :------: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
+| PETR|    82.72   |  81.35  | 77.65  |  76.33 |  81.35  | 77.65  |  76.33 | 77.65  |  76.33 |
+| BEVFusion | 86.04    |  84.76 | 81.22  |  79.97 |  81.35  | 77.65  |  76.33 | 77.65  |  76.33 |
+| DETR3D | 86.04    |  84.76 | 81.22  |  79.97 |  81.35  | 77.65  |  76.33 | 77.65  |  76.33 |

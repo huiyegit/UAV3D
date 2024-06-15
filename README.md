@@ -20,3 +20,17 @@ After downloading the data, please put the data in the following structure:
 │   │   ├── uav3d_infos_val.pkl
 │   │   ├── uav3d_infos_test.pkl
 ```
+## Train & inference
+### Single UAV 3D object detection
+#### PETR
+```bash
+cd perception/PETR
+```
+You can train the model following:
+```bash
+tools/dist_train.sh projects/configs/petr/petr_r50dcn_gridmask_p4.py 4 --work-dir work_dirs/petr_r50dcn_gridmask_p4/
+```
+You can evaluate the model following:
+```bash
+tools/dist_test.sh projects/configs/petr/petr_r50dcn_gridmask_p4.py work_dirs/petr_r50dcn_gridmask_p4/latest.pth 8 --eval bbox
+```

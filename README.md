@@ -122,5 +122,7 @@ torchpack dist-run -np 4  python tools/test.py configs/nuscenes/det/centerhead/l
 For collecting UAV3D, we get valuable help and suggestions from the authors of [CoPerception-UAV](https://siheng-chen.github.io/dataset/coperception-uav/) and [Where2comm](https://arxiv.org/abs/2209.12836).
 
 For 3D object detection task, our implementation is based on: [PETR](https://github.com/megvii-research/PETR/tree/main), [BEVFusion](https://github.com/mit-han-lab/bevfusion), and [DETR3D](https://github.com/WangYueFt/detr3d). 
+
 For Collaborative 3D object detection task, our implementation is based on: [CoPerception](https://github.com/coperception/coperception?tab=readme-ov-file).
+
 For object trcking task, our implementation is based on [CenterPoint](https://github.com/tianweiy/CenterPoint).

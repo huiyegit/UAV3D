@@ -1,6 +1,9 @@
 # UAV3D: A Large-scale 3D Perception Benchmark for Unmanned Aerial Vehicles
 
 
+## Installation
+- [Installation](https://github.com/huiyegit/UAV3D/tree/main)
+
 ## Dataset Download
 Please check our [website](https://github.com/huiyegit/UAV3D/tree/main) to download the dataset.
 

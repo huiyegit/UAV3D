@@ -13,7 +13,7 @@ After downloading the data, please put the data in the following structure:
 │   │   ├── sweeps
 │   │   ├── v1.0-test
 |   |   ├── v1.0-trainval
-│   │   ├── nuscenes_infos_train.pkl
-│   │   ├── nuscenes_infos_val.pkl
-│   │   ├── nuscenes_infos_test.pkl
+│   │   ├── uav3d_infos_train.pkl
+│   │   ├── uav3d_infos_val.pkl
+│   │   ├── uav3d_infos_test.pkl
 ```

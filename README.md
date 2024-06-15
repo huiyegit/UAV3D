@@ -79,8 +79,8 @@ torchpack dist-run -np 4  python tools/test.py configs/nuscenes/det/centerhead/l
     <th style="font-size:20px;">Header 2</th>
   </tr>
   <tr>
-    <td style="font-size:15px;">Content 1</td>
-    <td style="font-size:15px;">Content 2</td>
+    <td style="font-size:10px;">Content 1</td>
+    <td style="font-size:10px;">Content 2</td>
   </tr>
 </table>
 

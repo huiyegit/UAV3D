@@ -75,6 +75,6 @@ torchpack dist-run -np 4  python tools/test.py configs/nuscenes/det/centerhead/l
 
 |   Model   | Backbone | Size  | mAP↑  | NDS↑  | mATE↓  | mASE↓  | mAOE↓  |
 | :-------: | :------: | :--: | :--: | :--: | :--: | :--: | :--: |
-| [PETR](https://github.com/huiyegit/UAV3D/tree/main) |    82.72   |  81.35  | 77.65  |  76.33 |  81.35  | 77.65  |  76.33 |
-| [BEVFusion](https://github.com/huiyegit/UAV3D/tree/main) | 86.04    |  84.76 | 81.22  |  79.97 |  81.35  | 77.65  |  76.33 |
-| [DETR3D](https://github.com/huiyegit/UAV3D/tree/main) | 86.04    |  84.76 | 81.22  |  79.97 |  81.35  | 77.65  |  76.33 |
+| [PETR]|    82.72   |  81.35  | 77.65  |  76.33 |  81.35  | 77.65  |  76.33 |
+| [BEVFusion] | 86.04    |  84.76 | 81.22  |  79.97 |  81.35  | 77.65  |  76.33 |
+| [DETR3D] | 86.04    |  84.76 | 81.22  |  79.97 |  81.35  | 77.65  |  76.33 |

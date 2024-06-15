@@ -95,3 +95,14 @@ torchpack dist-run -np 4  python tools/test.py configs/nuscenes/det/centerhead/l
 |BEVFusion|Res-101|800×450|0.606|1.006|0.540|0.627|0.700|1.390|[link](https://github.com/huiyegit/UAV3D/tree/main) |  [link](https://github.com/huiyegit/UAV3D/tree/main)  |      
 |DETR3D| Res-101 | 800×450|0.262|1.123|0.238|0.561|1.140|2.720|[link](https://github.com/huiyegit/UAV3D/tree/main) |  [link](https://github.com/huiyegit/UAV3D/tree/main)  |
 
+### Collaborative 3D Object Detection (UAV3D val)
+
+
+|  Model  | mAP↑  | NDS↑  | mATE↓  | mASE↓  | mAOE↓  |  AP@IoU=0.5 ↑  | AP@IoU=0.7 ↑  |Checkpoint  | Log  |
+| :--: | :-------: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
+|Lower-bound |0.544| 0.556| 0.540| 0.147| 0.578| 0.457| 0.140|
+|When2com|  |0.550 |0.507 |0.534 |0.156 |0.679 |0.461| 0.166|
+|Who2com|  0.546| 0.597| 0.541| 0.150| 0.263| 0.453| 0.141|
+|V2VNet|  0.647| 0.628 |0.508 |0.167 |0.533 |0.545| 0.141|
+|DiscoNet|  0.700| 0.689| 0.423| 0.143| 0.422| 0.649| 0.247|
+|Upper-bound| 0.720| 0.748| 0.391| 0.106| 0.117| 0.673| 0.316|

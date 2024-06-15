@@ -73,8 +73,8 @@ torchpack dist-run -np 4  python tools/test.py configs/nuscenes/det/centerhead/l
 ## Main Results
 ### 3D Object Detection (UAV3D val)
 
-|   Model   | mAP-L1 | mAPH-L1  | mAP-L2  | mAPH-L2  |
-| :-------: | :------: | :--: | :--: | :--: |
-| [PETR](https://github.com/huiyegit/UAV3D/tree/main) |    82.72   |  81.35  | 77.65  |  76.33 |
-| [BEVFusion](https://github.com/huiyegit/UAV3D/tree/main) | 86.04    |  84.76 | 81.22  |  79.97 |
-| [DETR3D](https://github.com/huiyegit/UAV3D/tree/main) | 86.04    |  84.76 | 81.22  |  79.97 |
+|   Model   | Backbone | Size  | mAP↑  | NDS↑  | mATE↓  | mASE↓  | mAOE↓  |
+| :-------: | :------: | :--: | :--: | :--: | :--: | :--: | :--: |
+| [PETR](https://github.com/huiyegit/UAV3D/tree/main) |    82.72   |  81.35  | 77.65  |  76.33 |  81.35  | 77.65  |  76.33 |
+| [BEVFusion](https://github.com/huiyegit/UAV3D/tree/main) | 86.04    |  84.76 | 81.22  |  79.97 |  81.35  | 77.65  |  76.33 |
+| [DETR3D](https://github.com/huiyegit/UAV3D/tree/main) | 86.04    |  84.76 | 81.22  |  79.97 |  81.35  | 77.65  |  76.33 |

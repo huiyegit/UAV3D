@@ -98,7 +98,7 @@ torchpack dist-run -np 4  python tools/test.py configs/nuscenes/det/centerhead/l
 ### Collaborative 3D Object Detection (UAV3D val)
 
 
-|  Model  | mAP↑  | NDS↑  | mATE↓  | mASE↓  | mAOE↓  |  AP@IoU=0.5 ↑  | AP@IoU=0.7 ↑  |Checkpoint  | Log  |
+|  Model  | mAP↑  | NDS↑  | mATE↓  | mASE↓  | mAOE↓  |  AP@IoU=0.5↑  | AP@IoU=0.7↑  |Checkpoint  | Log  |
 | :--: | :-------: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
 |Lower-bound |0.544|0.556|0.540|0.147|0.578|0.457|0.140|[link](https://github.com/huiyegit/UAV3D/tree/main) |  [link](https://github.com/huiyegit/UAV3D/tree/main)  |
 |When2com|    0.550|0.507|0.534|0.156|0.679|0.461|0.166|[link](https://github.com/huiyegit/UAV3D/tree/main) |  [link](https://github.com/huiyegit/UAV3D/tree/main)  |

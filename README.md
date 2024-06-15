@@ -70,3 +70,11 @@ Evaluation of when2com(lowerbound / upperbound / v2vnet / when2com / who2com/ di
 ```bash
 torchpack dist-run -np 4  python tools/test.py configs/nuscenes/det/centerhead/lssfpn/camera/256x704/swint/when2com/default.yaml    runs/when2com/epoch_24.pth   --eval bbox
 ```
+## Main Results
+### 3D Object Detection (UAV3D val)
+
+|   Model   | mAP-L1 | mAPH-L1  | mAP-L2  | mAPH-L2  |
+| :-------: | :------: | :--: | :--: | :--: |
+| [PETR](https://github.com/huiyegit/UAV3D/tree/main) |    82.72   |  81.35  | 77.65  |  76.33 |
+| [BEVFusion](https://github.com/huiyegit/UAV3D/tree/main) | 86.04    |  84.76 | 81.22  |  79.97 |
+| [DETR3D](https://github.com/huiyegit/UAV3D/tree/main) | 86.04    |  84.76 | 81.22  |  79.97 |

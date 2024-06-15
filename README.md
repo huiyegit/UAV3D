@@ -79,6 +79,6 @@ torchpack dist-run -np 4  python tools/test.py configs/nuscenes/det/centerhead/l
 | PETR | Res-50 | 704×256 |0.512|0.571|0.741|0.173|0.072| [link](https://github.com/huiyegit/UAV3D/tree/main) |  [link](https://github.com/huiyegit/UAV3D/tree/main)  |  
 |BEVFusion|Res-50|704×256 |0.487|0.458|0.615|0.152|1.000| [link](https://github.com/huiyegit/UAV3D/tree/main) |  [link](https://github.com/huiyegit/UAV3D/tree/main)  |     
 |DETR3D| Res-50 | 704×256 |0.430|0.509|0.791|0.187|0.100| [link](https://github.com/huiyegit/UAV3D/tree/main) |  [link](https://github.com/huiyegit/UAV3D/tree/main)  |   
-| PETR | Res-101 | 800×450|0.581|0.632|0.625|0.160|0.064| [link](https://github.com/huiyegit/UAV3D/tree/main) |  [link](https://github.com/huiyegit/UAV3D/tree/main)  |  
+| PETR | Res-50 | 800×450 |0.581|0.632|0.625|0.160|0.064| [link](https://github.com/huiyegit/UAV3D/tree/main) |  [link](https://github.com/huiyegit/UAV3D/tree/main)  |  
 |BEVFusion|Res-101|800×450|0.536|0.582|0.521|0.154|0.343| [link](https://github.com/huiyegit/UAV3D/tree/main) |  [link](https://github.com/huiyegit/UAV3D/tree/main)  |      
 |DETR3D| Res-101 | 800×450|0.618|0.671|0.494|0.158|0.070| [link](https://github.com/huiyegit/UAV3D/tree/main) |  [link](https://github.com/huiyegit/UAV3D/tree/main)  |  

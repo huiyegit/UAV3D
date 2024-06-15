@@ -46,3 +46,15 @@ Evaluation:
 ```bash
 torchpack dist-run -np 4  python tools/test.py configs/nuscenes/det/centerhead/lssfpn/camera/256x704/resnet/default.yaml   runs/resnet50/epoch_24.pth   --eval bbox
 ```
+#### Baseline DETR3D
+```bash
+cd perception/detr3d
+```
+Training:
+```bash
+tools/dist_train.sh     projects/configs/detr3d/detr3d_res50_gridmask.py   4  --work-dir      work_dirs/detr3d_res50_gridmask/
+```
+Evaluation:
+```bash
+tools/dist_test.sh      projects/configs/detr3d/detr3d_res50_gridmask.py     work_dirs/detr3d_res50_gridmask/epoch_24.pth  4  --eval bbox
+```

@@ -106,3 +106,16 @@ torchpack dist-run -np 4  python tools/test.py configs/nuscenes/det/centerhead/l
 |V2VNet|      0.647|0.628|0.508|0.167|0.533|0.545|0.141|[link](https://github.com/huiyegit/UAV3D/tree/main) |  [link](https://github.com/huiyegit/UAV3D/tree/main)  |
 |DiscoNet|    0.700|0.689|0.423|0.143|0.422|0.649|0.247|[link](https://github.com/huiyegit/UAV3D/tree/main) |  [link](https://github.com/huiyegit/UAV3D/tree/main)  |
 |Upper-bound| 0.720|0.748|0.391|0.106|0.117|0.673|0.316|[link](https://github.com/huiyegit/UAV3D/tree/main) |  [link](https://github.com/huiyegit/UAV3D/tree/main)  |
+
+
+### Collaborative 3D Object Tracking (UAV3D val)
+|  Model  | AMOTA↑  | AMOTP↓  | MOTA↑  | MOTP↓  |  TID↓  |  LGD↓  |Checkpoint  | Log  |  
+| :--: | :-------: | :--: | :--: | :--: | :--: | :--: | :--: | :--:  |
+|Lower-bound| 0.644| 1.018| 0.593| 0.611| 0.620| 1.280|
+|When2com|  0.646| 1.012 |0.595 |0.618 |0.590| 1.200|
+|Who2com|  0.648| 1.012| 0.602| 0.623| 0.580| 1.200|
+|V2VNet|  0.782| 0.803| 0.735| 0.587| 0.360| 0.710|
+|DiscoNet|  0.809| 0.703| 0.766| 0.516| 0.300| 0.590|
+|Upper-bound| 0.812| 0.672| 0.781| 0.476| 0.300| 0.570|
+
+    

@@ -88,12 +88,12 @@ torchpack dist-run -np 4  python tools/test.py configs/nuscenes/det/centerhead/l
 
 |  Model  | Backbone | Size  | AMOTA↑  | AMOTP↓  | MOTA↑  | MOTP↓  | TID↓  | LGD↓   | det_result  |Log  |
 | :--: | :-------: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
-| PETR | Res-50 | 704×256 |0.199|1.294|0.195|0.794|1.280|2.970|[link](https://github.com/huiyegit/UAV3D/tree/main) |  [link](https://github.com/huiyegit/UAV3D/tree/main)  |
-|BEVFusion|Res-50|704×256 |0.566|1.137|0.501|0.695|0.790|1.600|[link](https://github.com/huiyegit/UAV3D/tree/main) |  [link](https://github.com/huiyegit/UAV3D/tree/main)  |     
-|DETR3D| Res-50 | 704×256 |0.089|1.382|0.121|0.800|1.540|3.530|[link](https://github.com/huiyegit/UAV3D/tree/main) |  [link](https://github.com/huiyegit/UAV3D/tree/main)  |    
-| PETR | Res-50 | 800×450 |0.291|1.156|0.256|0.677|1.090|2.550|[link](https://github.com/huiyegit/UAV3D/tree/main) |  [link](https://github.com/huiyegit/UAV3D/tree/main)  |
-|BEVFusion|Res-101|800×450|0.606|1.006|0.540|0.627|0.700|1.390|[link](https://github.com/huiyegit/UAV3D/tree/main) |  [link](https://github.com/huiyegit/UAV3D/tree/main)  |      
-|DETR3D| Res-101 | 800×450|0.262|1.123|0.238|0.561|1.140|2.720|[link](https://github.com/huiyegit/UAV3D/tree/main) |  [link](https://github.com/huiyegit/UAV3D/tree/main)  |
+| PETR | Res-50 | 704×256 |0.199|1.294|0.195|0.794|1.280|2.970|[link](https://drive.google.com/file/d/1J9S1v4fae_hxibFunr5jinC1-tMaN4mD/view?usp=share_link) |  [link](https://github.com/huiyegit/UAV3D/tree/main)  |
+|BEVFusion|Res-50|704×256 |0.566|1.137|0.501|0.695|0.790|1.600|[link](https://drive.google.com/file/d/1kxGvjVJ0vqYdEmz6KtLObB69V1qppnxb/view?usp=share_link) |  [link](https://github.com/huiyegit/UAV3D/tree/main)  |     
+|DETR3D| Res-50 | 704×256 |0.089|1.382|0.121|0.800|1.540|3.530|[link](https://drive.google.com/file/d/1r8nIufMhK8v5cmsKb1rKcBGA9EbrTDRl/view?usp=share_link) |  [link](https://github.com/huiyegit/UAV3D/tree/main)  |    
+| PETR | Res-50 | 800×450 |0.291|1.156|0.256|0.677|1.090|2.550|[link](https://drive.google.com/file/d/165Zm4khoLdyM7xon3HkMgGY0yNsYjOgB/view?usp=share_link) |  [link](https://github.com/huiyegit/UAV3D/tree/main)  |
+|BEVFusion|Res-101|800×450|0.606|1.006|0.540|0.627|0.700|1.390|[link](https://drive.google.com/file/d/1TmTRpo29hScmOb5CSzEA5Gfw5J63WPfp/view?usp=share_link) |  [link](https://github.com/huiyegit/UAV3D/tree/main)  |      
+|DETR3D| Res-101 | 800×450|0.262|1.123|0.238|0.561|1.140|2.720|[link](https://drive.google.com/file/d/1nCA-7OZOwBwUuxMP9yGG0HaCEr4a4pgK/view?usp=share_link) |  [link](https://github.com/huiyegit/UAV3D/tree/main)  |
 
 ### Collaborative 3D Object Detection (UAV3D val)
 

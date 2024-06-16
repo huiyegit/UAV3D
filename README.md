@@ -80,7 +80,7 @@ torchpack dist-run -np 4  python tools/test.py configs/nuscenes/det/centerhead/l
 |BEVFusion|Res-50|704×256 |0.487|0.458|0.615|0.152|1.000| [link](https://drive.google.com/file/d/1uu0YR-t5liOieJLAdk1AXZNt4THVKt4_/view?usp=share_link) |  [link](https://drive.google.com/file/d/1MbDSSkhctFnJ365sBuOwJEvyeacrQUjc/view?usp=share_link)  |     
 |DETR3D| Res-50 | 704×256 |0.430|0.509|0.791|0.187|0.100| [link](https://drive.google.com/file/d/1DpLlBF_TGyx8_y7l2l6t3s7QUup_zTMi/view?usp=sharing) |  [link](https://drive.google.com/drive/folders/1gvbeJjchTxBlpJpLZN16S5q-L1SAN-id)  |   
 | PETR | Res-50 | 800×450 |0.581|0.632|0.625|0.160|0.064| [link](https://drive.google.com/file/d/1oEJHdoVcoGiIp50oRYzYo2JhbPgZ3KKJ/view?usp=share_link) |  [link](https://drive.google.com/file/d/1j3mfZsxnZ676bj_JqngRcgbMq9xqjWE5/view?usp=share_link)  |  
-|BEVFusion|Res-101|800×450|0.536|0.582|0.521|0.154|0.343| [link](https://github.com/huiyegit/UAV3D/tree/main) |  [link](https://github.com/huiyegit/UAV3D/tree/main)  |      
+|BEVFusion|Res-101|800×450|0.536|0.582|0.521|0.154|0.343| [link](https://drive.google.com/file/d/1H48bOA6xGw6cYIitzC1yzRgnQAVEj0tO/view?usp=share_link) |  [link](https://drive.google.com/file/d/1IQjd5CDKWsAKQvJLBQcAAQy4dSfDUwez/view?usp=share_link)  |      
 |DETR3D| Res-101 | 800×450|0.618|0.671|0.494|0.158|0.070| [link](https://github.com/huiyegit/UAV3D/tree/main) |  [link](https://github.com/huiyegit/UAV3D/tree/main)  |  
 
 ### 3D Object Tracking (UAV3D val)

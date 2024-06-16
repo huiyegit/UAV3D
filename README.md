@@ -111,12 +111,12 @@ torchpack dist-run -np 4  python tools/test.py configs/nuscenes/det/centerhead/l
 ### Collaborative 3D Object Tracking (UAV3D val)
 |  Model  | AMOTA↑  | AMOTP↓  | MOTA↑  | MOTP↓  |  TID↓  |  LGD↓  |det_result  | Log  |  
 | :--: | :-------: | :--: | :--: | :--: | :--: | :--: | :--: | :--:  |
-|Lower-bound| 0.644|1.018|0.593|0.611|0.620|1.280|[link](https://github.com/huiyegit/UAV3D/tree/main) |  [link](https://github.com/huiyegit/UAV3D/tree/main)  |
-|When2com|    0.646|1.012|0.595|0.618|0.590|1.200|[link](https://github.com/huiyegit/UAV3D/tree/main) |  [link](https://github.com/huiyegit/UAV3D/tree/main)  |
-|Who2com|     0.648|1.012|0.602|0.623|0.580|1.200|[link](https://github.com/huiyegit/UAV3D/tree/main) |  [link](https://github.com/huiyegit/UAV3D/tree/main)  |
-|V2VNet|      0.782|0.803|0.735|0.587|0.360|0.710|[link](https://github.com/huiyegit/UAV3D/tree/main) |  [link](https://github.com/huiyegit/UAV3D/tree/main)  |
-|DiscoNet|    0.809|0.703|0.766|0.516|0.300|0.590|[link](https://github.com/huiyegit/UAV3D/tree/main) |  [link](https://github.com/huiyegit/UAV3D/tree/main)  |
-|Upper-bound| 0.812|0.672|0.781|0.476|0.300|0.570|[link](https://github.com/huiyegit/UAV3D/tree/main) |  [link](https://github.com/huiyegit/UAV3D/tree/main)  |
+|Lower-bound| 0.644|1.018|0.593|0.611|0.620|1.280|[link](https://drive.google.com/file/d/190--pUICJlqYOb3gX9XXYeI2npRF-vfv/view?usp=share_link) |  [link](https://github.com/huiyegit/UAV3D/tree/main)  |
+|When2com|    0.646|1.012|0.595|0.618|0.590|1.200|[link](https://drive.google.com/file/d/1in9M8xSEw4r28l9oQ_22GkFLAMJ_4S4E/view?usp=share_link) |  [link](https://github.com/huiyegit/UAV3D/tree/main)  |
+|Who2com|     0.648|1.012|0.602|0.623|0.580|1.200|[link](https://drive.google.com/file/d/1BFni14jf678aESLfe0W-HZMDvhfsl-Ac/view?usp=share_link) |  [link](https://github.com/huiyegit/UAV3D/tree/main)  |
+|V2VNet|      0.782|0.803|0.735|0.587|0.360|0.710|[link](https://drive.google.com/file/d/1e1BRrOkK65jVD440UuiLjzBwA0xhpcPk/view?usp=share_link) |  [link](https://github.com/huiyegit/UAV3D/tree/main)  |
+|DiscoNet|    0.809|0.703|0.766|0.516|0.300|0.590|[link](https://drive.google.com/file/d/15eYDvOaK9ZT1wdrpWp9Tiv0VJBJ1HBFe/view?usp=share_link) |  [link](https://github.com/huiyegit/UAV3D/tree/main)  |
+|Upper-bound| 0.812|0.672|0.781|0.476|0.300|0.570|[link](https://drive.google.com/file/d/1WdPzloZd4a7j6SacO09WSSA5ZTuEvW0J/view?usp=share_link) |  [link](https://github.com/huiyegit/UAV3D/tree/main)  |
 
 ## Acknowledgement
 In collecting UAV3D, we received valuable help and suggestions from the authors of [CoPerception-UAV](https://siheng-chen.github.io/dataset/coperception-uav/) and [Where2comm](https://arxiv.org/abs/2209.12836).

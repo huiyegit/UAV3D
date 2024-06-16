@@ -100,12 +100,12 @@ torchpack dist-run -np 4  python tools/test.py configs/nuscenes/det/centerhead/l
 
 |  Model  | mAP↑  | NDS↑  | mATE↓  | mASE↓  | mAOE↓  |  AP@IoU=0.5↑  | AP@IoU=0.7↑  |Checkpoint  | Log  |
 | :--: | :-------: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
-|Lower-bound |0.544|0.556|0.540|0.147|0.578|0.457|0.140|[link](https://github.com/huiyegit/UAV3D/tree/main) |  [link](https://github.com/huiyegit/UAV3D/tree/main)  |
-|When2com|    0.550|0.507|0.534|0.156|0.679|0.461|0.166|[link](https://github.com/huiyegit/UAV3D/tree/main) |  [link](https://github.com/huiyegit/UAV3D/tree/main)  |
-|Who2com|     0.546|0.597|0.541|0.150|0.263|0.453|0.141|[link](https://github.com/huiyegit/UAV3D/tree/main) |  [link](https://github.com/huiyegit/UAV3D/tree/main)  |
-|V2VNet|      0.647|0.628|0.508|0.167|0.533|0.545|0.141|[link](https://github.com/huiyegit/UAV3D/tree/main) |  [link](https://github.com/huiyegit/UAV3D/tree/main)  |
-|DiscoNet|    0.700|0.689|0.423|0.143|0.422|0.649|0.247|[link](https://github.com/huiyegit/UAV3D/tree/main) |  [link](https://github.com/huiyegit/UAV3D/tree/main)  |
-|Upper-bound| 0.720|0.748|0.391|0.106|0.117|0.673|0.316|[link](https://github.com/huiyegit/UAV3D/tree/main) |  [link](https://github.com/huiyegit/UAV3D/tree/main)  |
+|Lower-bound |0.544|0.556|0.540|0.147|0.578|0.457|0.140|[link](https://drive.google.com/file/d/1muByiSROz0vk9YLdb3K1rvlctX0yk-Nz/view?usp=share_link) |  [link](https://drive.google.com/file/d/1muByiSROz0vk9YLdb3K1rvlctX0yk-Nz/view?usp=share_link)  |
+|When2com|    0.550|0.507|0.534|0.156|0.679|0.461|0.166|[link](https://drive.google.com/file/d/1HA427BTDglHjz_R9u8kLtG86EG3emQZK/view?usp=share_link) |  [link](https://drive.google.com/file/d/1vRFqDvs0eycoKXCZhtGrsQTd9aOLM7TX/view?usp=share_link)  |
+|Who2com|     0.546|0.597|0.541|0.150|0.263|0.453|0.141|[link](https://drive.google.com/file/d/1HA427BTDglHjz_R9u8kLtG86EG3emQZK/view?usp=share_link) |  [link](https://drive.google.com/file/d/1vRFqDvs0eycoKXCZhtGrsQTd9aOLM7TX/view?usp=share_link)  |
+|V2VNet|      0.647|0.628|0.508|0.167|0.533|0.545|0.141|[link](https://drive.google.com/file/d/14x2PPqe4txDJioDB3zR8KTMX2ntP7L9E/view?usp=share_link) |  [link](https://drive.google.com/file/d/1sk98jB-yXY3-oQpjav4lAxFDP4m0zubx/view?usp=share_link)  |
+|DiscoNet|    0.700|0.689|0.423|0.143|0.422|0.649|0.247|[link](https://drive.google.com/file/d/1soc1_kF1qO9aqEwJWKGZqiQ9KLFRywqR/view?usp=share_link) |  [link](https://drive.google.com/file/d/1lXqFlKGLLgYv19ZdwDkHCj4hZpF_IE2V/view?usp=share_link)  |
+|Upper-bound| 0.720|0.748|0.391|0.106|0.117|0.673|0.316|[link](https://drive.google.com/file/d/1a159eOaqx7MesDkp1YbJU-r_v-_whbYR/view?usp=share_link) |  [link](https://drive.google.com/file/d/19YfvTPsY4zNc-kbfFBEx48APAebe_Nj9/view?usp=share_link)  |
 
 
 ### Collaborative 3D Object Tracking (UAV3D val)

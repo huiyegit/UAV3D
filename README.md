@@ -125,4 +125,4 @@ For 3D object detection task, our implementation is based on [PETR](https://gith
 
 For Collaborative 3D object detection task, our implementation is based on [BEVFusion](https://github.com/mit-han-lab/bevfusion) and [CoPerception](https://github.com/coperception/coperception?tab=readme-ov-file).
 
-For object trcking task, our implementation is based on [CenterPoint](https://github.com/tianweiy/CenterPoint).
+For object tracking task, our implementation is based on [CenterPoint](https://github.com/tianweiy/CenterPoint).

@@ -77,7 +77,7 @@ torchpack dist-run -np 4  python tools/test.py configs/nuscenes/det/centerhead/l
 |  Model  | Backbone | Size  | mAP↑  | NDS↑  | mATE↓  | mASE↓  | mAOE↓  | Checkpoint  | Log  |
 | :--: | :-------: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
 | PETR | Res-50 | 704×256 |0.512|0.571|0.741|0.173|0.072| [link](https://drive.google.com/file/d/1pDLgIS-6OA6Si4yGImn8OJegF2AbNgxh/view?usp=share_link) |  [link](https://drive.google.com/file/d/1fmmWvvrl6hwi1W2me5__oVha0zYqYlvS/view?usp=share_link)  |  
-|BEVFusion|Res-50|704×256 |0.487|0.458|0.615|0.152|1.000| [link](https://github.com/huiyegit/UAV3D/tree/main) |  [link](https://github.com/huiyegit/UAV3D/tree/main)  |     
+|BEVFusion|Res-50|704×256 |0.487|0.458|0.615|0.152|1.000| [link](https://drive.google.com/file/d/1uu0YR-t5liOieJLAdk1AXZNt4THVKt4_/view?usp=share_link) |  [link]()  |     
 |DETR3D| Res-50 | 704×256 |0.430|0.509|0.791|0.187|0.100| [link](https://drive.google.com/file/d/1DpLlBF_TGyx8_y7l2l6t3s7QUup_zTMi/view?usp=sharing) |  [link](https://drive.google.com/drive/folders/1gvbeJjchTxBlpJpLZN16S5q-L1SAN-id)  |   
 | PETR | Res-50 | 800×450 |0.581|0.632|0.625|0.160|0.064| [link](https://drive.google.com/file/d/1oEJHdoVcoGiIp50oRYzYo2JhbPgZ3KKJ/view?usp=share_link) |  [link](https://drive.google.com/file/d/1j3mfZsxnZ676bj_JqngRcgbMq9xqjWE5/view?usp=share_link)  |  
 |BEVFusion|Res-101|800×450|0.536|0.582|0.521|0.154|0.343| [link](https://github.com/huiyegit/UAV3D/tree/main) |  [link](https://github.com/huiyegit/UAV3D/tree/main)  |      

@@ -5,7 +5,7 @@
 - [Installation](https://github.com/huiyegit/UAV3D/tree/main)
 
 ## Dataset Download
-Please check our [website](https://github.com/huiyegit/UAV3D/tree/main) to download the dataset.
+Please check our [website](https://drive.google.com/drive/folders/1dr0TSTDSmWV1FUn_kuXcrG_pMVoPpKuj?usp=share_link) to download the dataset.
 
 After downloading the data, please put the data in the following structure:
 ```shell

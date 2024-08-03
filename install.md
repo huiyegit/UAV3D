@@ -4,6 +4,27 @@
 ### BEVFusion
 **Option 1** : Follow the installation instructions of [BEVFusion](https://github.com/mit-han-lab/bevfusion). If some versions of packages are not provided, please refer to our [requirements](./requirements_bevfusion.txt) for BEVFusion. **Note**: We do not use the latest source code of __BEVFusion__ repo. Please use this [version](./perception/bevfusion) for __UAV3D__. 
 
+**Option 2** : 
+conda create --name bevfusion  python=3.8
+conda activate bevfusion
+
+conda install pytorch==1.10.1 torchvision==0.11.2 torchaudio==0.10.1 cudatoolkit=11.3 -c pytorch
+pip install Pillow==8.4.0
+pip install tqdm
+pip install torchpack
+pip install mmcv==1.4.0 mmcv-full==1.4.0 mmdet==2.20.0
+pip install nuscenes-devkit
+pip install mpi4py==3.0.3
+pip install numba==0.48.0
+
+pip uninstall numpy && pip install numpy==1.22.3
+pip uninstall yapf && pip install yapf==0.40.1
+pip uninstall setuptools && pip install setuptools==59.5.0
+pip install  transforms3d
+
+
+
+
 ### PETR
 **Option 1** : Follow the installation instructions of [PETR](https://github.com/megvii-research/PETR). If some versions of packages are not provided, please refer to our [requirements](./requirements_petr.txt) for PETR.
 

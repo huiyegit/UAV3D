@@ -112,7 +112,7 @@ pip install setuptools==59.5.0
 
 
 ## Docker environment
-**Option 1** : Follow the installation instructions of [BEVFusion](https://github.com/mit-han-lab/bevfusion). Then follow the instructions __above__ to install the Conda enviroment in Docker. 
+**Option 1** : Follow the installation instructions for Docker in [BEVFusion](https://github.com/mit-han-lab/bevfusion). Then follow the instructions __above__ to install the Conda enviroment in Docker. 
 
 
 

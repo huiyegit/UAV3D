@@ -76,6 +76,41 @@ pip install einops==0.7.0
 ### DETR3D
 **Option 1** : Follow the installation instructions of [DETR3D](https://github.com/WangYueFt/detr3d). If some versions of packages are not provided, please refer to our [requirements](./requirements_detr3d.txt) for DETR3D.
 
+**Option 2** : 
+```bash
+conda create --name detr3d python=3.8
+conda activate detr3d
+conda install pytorch==1.10.1 torchvision==0.11.2 torchaudio==0.10.1 cudatoolkit=11.3 -c pytorch
+```
+
+```bash
+pip install mmcv-full==1.4.0 -f https://download.openmmlab.com/mmcv/dist/cu113/torch1.10.1/index.html
+pip install mmdet==2.24.1
+pip install mmsegmentation==0.20.2
+git clone https://github.com/open-mmlab/mmdetection3d.git
+cd mmdetection3d
+git checkout v0.17.1
+pip install -r requirements/build.txt
+python3 setup.py develop
+```
+
+```bash
+pip install scikit-image==0.19.3
+pip install numba==0.48.0
+pip install  nuscenes-devkit==1.1.10
+pip install  lyft-dataset-sdk==0.0.8
+pip install  plyfile==1.0.3
+pip install networkx==2.2
+pip install numpy==1.19.5
+pip install tensorboard==2.14.0
+pip install pandas==1.4.4
+pip install yapf==0.40.1
+pip install setuptools==59.5.0
+```
+
+
+
+
 ## Docker environment
 **Option 1** : Follow the installation instructions of [BEVFusion](https://github.com/mit-han-lab/bevfusion). Then follow the instructions __above__ to install the Conda enviroment in Docker. 
 

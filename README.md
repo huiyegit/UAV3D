@@ -2,7 +2,7 @@
 
 
 ## Installation
-- [Installation](https://github.com/huiyegit/UAV3D/tree/main)
+- [Installation](./install.md)
 
 ## Dataset Download
 Please check [Google Drive](https://drive.google.com/drive/folders/1dr0TSTDSmWV1FUn_kuXcrG_pMVoPpKuj?usp=share_link) to download the dataset.

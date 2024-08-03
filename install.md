@@ -32,6 +32,46 @@ pip install  transforms3d==0.4.1
 ### PETR
 **Option 1** : Follow the installation instructions of [PETR](https://github.com/megvii-research/PETR). If some versions of packages are not provided, please refer to our [requirements](./requirements_petr.txt) for PETR.
 
+**Option 2** : 
+```bash
+conda create --name petr python=3.8
+conda activate petr
+conda install pytorch==1.10.1 torchvision==0.11.2 torchaudio==0.10.1 cudatoolkit=11.3 -c pytorch
+```
+
+```bash
+pip install mmcv-full==1.4.0 -f https://download.openmmlab.com/mmcv/dist/cu113/torch1.10.1/index.html
+pip install mmdet==2.24.1
+pip install mmsegmentation==0.20.2
+git clone https://github.com/open-mmlab/mmdetection3d.git
+cd mmdetection3d
+git checkout v0.17.1
+pip install -r requirements/build.txt
+python3 setup.py develop  
+```
+
+```bash
+pip install scikit-image==0.19.3
+pip uninstall numba && pip install numba==0.48.0
+pip install  nuscenes-devkit==1.1.10
+pip install  lyft_dataset_sdk==0.0.8
+pip install  plyfile==1.0.3
+pip uninstall networkx && pip install networkx==2.2
+pip uninstall numpy && pip install numpy==1.19.5
+pip uninstall tensorboard && pip install tensorboard==2.14.0
+pip uninstall pandas && pip install pandas==1.4.4
+pip uninstall yapf && pip install yapf==0.40.1
+pip uninstall setuptools && pip install setuptools==59.5.0
+```
+
+```bash
+pip install protobuf==4.25.3
+pip install markdown==3.5.2
+pip install absl-py==2.1.0
+pip install grpcio==1.62.0
+pip install einops==0.7.0
+```
+
 
 ### DETR3D
 **Option 1** : Follow the installation instructions of [DETR3D](https://github.com/WangYueFt/detr3d). If some versions of packages are not provided, please refer to our [requirements](./requirements_detr3d.txt) for DETR3D.

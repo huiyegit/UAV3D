@@ -3,6 +3,7 @@
 
 ### BEVFusion
 Please refer to BEVFusion [repo](https://github.com/mit-han-lab/bevfusion).
+Requirements [pakages](./requirements_bevfusion.txt)
 
 ### PETR
 Please refer to PETR [repo](https://github.com/megvii-research/PETR).

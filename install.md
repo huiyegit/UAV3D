@@ -2,8 +2,7 @@
 ## Conda environment
 
 ### BEVFusion
-Please refer to BEVFusion [repo](https://github.com/mit-han-lab/bevfusion).
-Requirements [pakages](./requirements_bevfusion.txt)
+Option 1 : Follow the instructions of [BEVFusion](https://github.com/mit-han-lab/bevfusion). If some versions of packages are not provided, please refer to our [requirements](./requirements_bevfusion.txt)
 
 ### PETR
 Please refer to PETR [repo](https://github.com/megvii-research/PETR).

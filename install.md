@@ -12,7 +12,7 @@
 **Option 1** : Follow the installation instructions of [DETR3D](https://github.com/WangYueFt/detr3d). If some versions of packages are not provided, please refer to our [requirements](./requirements_detr3d.txt) for DETR3D.
 
 ## Docker environment
-
+**Option 1** : Follow the installation instructions of [BEVFusion](https://github.com/mit-han-lab/bevfusion). Then follow the instructions __above__ to install the Conda enviroment in Docker. 
 
 
 ## 

@@ -225,4 +225,4 @@ xz                        5.4.6                h5eee18b_0
 yapf                      0.40.1                   pypi_0    pypi
 zipp                      3.17.0                   pypi_0    pypi
 zlib                      1.2.13               h5eee18b_0  
-zstd                      1.5.5                hc292b87_0
+zstd                      1.5.5                hc292b87_0 

@@ -11,6 +11,10 @@
 ### DETR3D
 **Option 1** : Follow the installation instructions of [DETR3D](https://github.com/WangYueFt/detr3d). If some versions of packages are not provided, please refer to our [requirements](./requirements_detr3d.txt) for DETR3D.
 
+## Docker environment
+
+
+
 ## 
 ```bash
 pip install mmcv-full -f https://download.openmmlab.com/mmcv/dist/{cu_version}/{torch_version}/index.html

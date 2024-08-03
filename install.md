@@ -1,6 +1,15 @@
 
 ## Conda environment
 
+### BEVFusion
+Please refer to BEVFusion [repo](https://github.com/mit-han-lab/bevfusion).
+
+### PETR
+Please refer to PETR [repo](https://github.com/megvii-research/PETR).
+
+### DETR3D
+Please refer to DETR3D [repo](https://github.com/WangYueFt/detr3d).
+
 ## 
 ```bash
 pip install mmcv-full -f https://download.openmmlab.com/mmcv/dist/{cu_version}/{torch_version}/index.html

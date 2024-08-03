@@ -2,7 +2,7 @@
 ## Conda environment
 
 ### BEVFusion
-Option 1 : Follow the installation instructions of [BEVFusion](https://github.com/mit-han-lab/bevfusion). If some versions of packages are not provided, please refer to our [requirements](./requirements_bevfusion.txt) for BEVFusion. Note: We do not use the latest source code of BEVFusion repo. Please use the [version](./perception/bevfusion) for UAV3D. 
+Option 1 : Follow the installation instructions of [BEVFusion](https://github.com/mit-han-lab/bevfusion). If some versions of packages are not provided, please refer to our [requirements](./requirements_bevfusion.txt) for BEVFusion. Note: We do not use the latest source code of BEVFusion repo. Please use this [version](./perception/bevfusion) for UAV3D. 
 
 ### PETR
 Option 1 : Follow the installation instructions of [PETR](https://github.com/megvii-research/PETR). If some versions of packages are not provided, please refer to our [requirements](./requirements_petr.txt) for PETR.

@@ -1,5 +1,7 @@
 
-## Install MMCV
+#Conda environment
+
+## 
 ```bash
 pip install mmcv-full -f https://download.openmmlab.com/mmcv/dist/{cu_version}/{torch_version}/index.html
 ```

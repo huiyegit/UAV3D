@@ -2,13 +2,14 @@
 ## Conda environment
 
 ### BEVFusion
-Option 1 : Follow the instructions of [BEVFusion](https://github.com/mit-han-lab/bevfusion). If some versions of packages are not provided, please refer to our [requirements](./requirements_bevfusion.txt)
+Option 1 : Follow the installation instructions of [BEVFusion](https://github.com/mit-han-lab/bevfusion). If some versions of packages are not provided, please refer to our [requirements](./requirements_bevfusion.txt) for BEVFusion.
 
 ### PETR
-Please refer to PETR [repo](https://github.com/megvii-research/PETR).
+Option 1 : Follow the installation instructions of [PETR](https://github.com/megvii-research/PETR). If some versions of packages are not provided, please refer to our [requirements](./requirements_petr.txt) for PETR.
+
 
 ### DETR3D
-Please refer to DETR3D [repo](https://github.com/WangYueFt/detr3d).
+Option 1 : Follow the installation instructions of [DETR3D](https://github.com/WangYueFt/detr3d). If some versions of packages are not provided, please refer to our [requirements](./requirements_detr3d.txt) for DETR3D.
 
 ## 
 ```bash

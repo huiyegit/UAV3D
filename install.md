@@ -5,10 +5,10 @@
 **Option 1** : Follow the installation instructions of [BEVFusion](https://github.com/mit-han-lab/bevfusion). If some versions of packages are not provided, please refer to our [requirements](./requirements_bevfusion.txt) for BEVFusion. **Note**: We do not use the latest source code of __BEVFusion__ repo. Please use this [version](./perception/bevfusion) for __UAV3D__. 
 
 **Option 2** : 
-
+```bash
 conda create --name bevfusion  python=3.8
-
 conda activate bevfusion
+```
 
 conda install pytorch==1.10.1 torchvision==0.11.2 torchaudio==0.10.1 cudatoolkit=11.3 -c pytorch
 pip install Pillow==8.4.0

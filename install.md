@@ -108,7 +108,19 @@ pip install yapf==0.40.1
 pip install setuptools==59.5.0
 ```
 
+### CenterPoint
+**Option 1** : For some versions of packages, please refer to our [requirements](./requirements_centerpoint.txt) for CenterPoint. **Note**: We have added some python scrips to the __CenterPoint__ repo. Please use this [version](./tracking/CenterPoint) for __UAV3D__. 
 
+```bash
+conda create --name centerpoint python=3.8
+conda activate centerpoint
+```
+
+```bash
+git clone https://github.com/huiyegit/UAV3D.git
+cd UAV3D/tracking/CenterPoint
+pip install -r requirements
+```
 
 
 ## Docker environment

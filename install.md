@@ -109,7 +109,7 @@ pip install setuptools==59.5.0
 ```
 
 ### CenterPoint
-**Option 1** : For some versions of packages, please refer to our [requirements](./requirements_centerpoint.txt) for CenterPoint. **Note**: We have added some python scrips to the __CenterPoint__ repo. Please use this [version](./tracking/CenterPoint) for __UAV3D__. 
+**Option 1** : For some versions of packages, please refer to our [requirements](./requirements_centerpoint.txt) for CenterPoint. **Note**: We have added some python scripts to the __CenterPoint__ repo. Please use this [version](./tracking/CenterPoint) for __UAV3D__. 
 
 ```bash
 conda create --name centerpoint python=3.8

@@ -26,6 +26,8 @@ pip uninstall setuptools && pip install setuptools==59.5.0
 pip install  transforms3d==0.4.1
 ```
 ```bash
+git clone https://github.com/huiyegit/UAV3D.git
+cd UAV3D/perception/bevfusion
 python setup.py develop
 ```
 

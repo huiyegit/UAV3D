@@ -70,7 +70,7 @@ Evaluation of when2com(lowerbound / upperbound / v2vnet / when2com / who2com/ di
 ```bash
 torchpack dist-run -np 4  python tools/test.py configs/nuscenes/det/centerhead/lssfpn/camera/256x704/swint/when2com/default.yaml    runs/when2com/epoch_24.pth   --eval bbox
 ```
-### Tracking
+### Object Tracking
 
 ```bash
 cd tracking/CenterPoint

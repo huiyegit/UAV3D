@@ -499,34 +499,34 @@ class NuScenesDataset(Custom3DDataset):
         #     config,
         #     batch_motion_preds,
         # )
-        pred_results, gt_results = format_results_iou(nusc_eval)
+        #pred_results, gt_results = format_results_iou(nusc_eval)
 
-        pred_selected = []
+        #pred_selected = []
         # for selected, result in zip(class_selected[0], pred_results):
         #     selected_idx = selected[0]['selected_idx']
         #     selected_result = result[0][selected_idx, :]
         #     pred_selected.append([selected_result])
         # pred_results = pred_selected
 
-        mean_ap, _ = eval_map(
-            pred_results,
-            gt_results,
-            scale_ranges=None,
-            iou_thr=0.5,
-            dataset=None,
-            logger=None,
-        )
-        print('mean_ap = ', mean_ap)
+        #mean_ap, _ = eval_map(
+        #    pred_results,
+        #    gt_results,
+        #    scale_ranges=None,
+        #    iou_thr=0.5,
+        #    dataset=None,
+        #    logger=None,
+        #)
+        #print('mean_ap = ', mean_ap)
         
-        mean_ap, _ = eval_map(
-            pred_results,
-            gt_results,
-            scale_ranges=None,
-            iou_thr=0.7,
-            dataset=None,
-            logger=None,
-        )
-        print('mean_ap = ', mean_ap)
+        #mean_ap, _ = eval_map(
+        #    pred_results,
+        #    gt_results,
+        #    scale_ranges=None,
+        #    iou_thr=0.7,
+        #    dataset=None,
+        #    logger=None,
+        #)
+        #print('mean_ap = ', mean_ap)
 
         nusc_eval.main(render_curves=False)
 

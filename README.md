@@ -70,6 +70,20 @@ Evaluation of when2com(lowerbound / upperbound / v2vnet / when2com / who2com/ di
 ```bash
 torchpack dist-run -np 4  python tools/test.py configs/nuscenes/det/centerhead/lssfpn/camera/256x704/swint/when2com/default.yaml    runs/when2com/epoch_24.pth   --eval bbox
 ```
+### Tracking
+
+```bash
+cd tracking/CenterPoint
+```
+Put the results_nusc.json file in the  CenterPoint/input folder
+
+Evaluation:
+```bash
+python pub_test.py --work_dir .../UAV3D/tracking/CenterPoint/output  --checkpoint    .../UAV3D/tracking/CenterPoint/input/results_nusc.json 
+```
+
+
+
 ## Main Results
 ### 3D Object Detection (UAV3D val)
 

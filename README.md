@@ -75,7 +75,7 @@ torchpack dist-run -np 4  python tools/test.py configs/nuscenes/det/centerhead/l
 ```bash
 cd tracking/CenterPoint
 ```
-Put the results_nusc.json file in the  CenterPoint/input folder
+Put the `results_nusc.json` file in the  `CenterPoint/input` folder.
 
 Evaluation:
 ```bash

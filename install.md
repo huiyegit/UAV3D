@@ -25,7 +25,9 @@ pip uninstall yapf && pip install yapf==0.40.1
 pip uninstall setuptools && pip install setuptools==59.5.0
 pip install  transforms3d==0.4.1
 ```
-
+```bash
+python setup.py develop
+```
 
 
 

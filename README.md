@@ -79,7 +79,7 @@ Put the `results_nusc.json` file in the  `CenterPoint/input` folder.
 
 Evaluation:
 ```bash
-python pub_test.py --work_dir .../UAV3D/tracking/CenterPoint/output  --checkpoint    .../UAV3D/tracking/CenterPoint/input/results_nusc.json 
+python pub_test.py --work_dir /{dir}/UAV3D/tracking/CenterPoint/output  --checkpoint    /{dir}/UAV3D/tracking/CenterPoint/input/results_nusc.json 
 ```
 
 

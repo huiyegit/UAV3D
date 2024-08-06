@@ -49,7 +49,7 @@ pip install mmdet==2.24.1
 pip install mmsegmentation==0.20.2
 ```
 ```bash
-cd mmdetection3d
+cd UAV3D/perception/PETR/mmdetection3d
 python3 setup.py develop  
 ```
 

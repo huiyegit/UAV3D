@@ -90,10 +90,7 @@ conda install pytorch==1.10.1 torchvision==0.11.2 torchaudio==0.10.1 cudatoolkit
 pip install mmcv-full==1.4.0 -f https://download.openmmlab.com/mmcv/dist/cu113/torch1.10.1/index.html
 pip install mmdet==2.24.1
 pip install mmsegmentation==0.20.2
-git clone https://github.com/open-mmlab/mmdetection3d.git
-cd mmdetection3d
-git checkout v0.17.1
-pip install -r requirements/build.txt
+cd UAV3D/perception/detr3d/mmdetection3d
 python3 setup.py develop
 ```
 

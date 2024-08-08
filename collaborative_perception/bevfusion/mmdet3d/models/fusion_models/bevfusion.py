@@ -227,15 +227,21 @@ class BEVFusion(Base3DFusionModel):
         x = torch.stack(x_temp,dim=1)
         
         # x_com = self.encoders["camera"]['com'](x)
-        # x_com = self.encoders["camera"]['com'](x,training=self.training)
-        x_com = x
+        x_com = self.encoders["camera"]['com'](x,training=self.training)
         
-        # n_cam = 1
-        n_cam = 5
-        x = x_com[:,0:n_cam,:]
+        if self.com_type == "when2com":
+            n_agent = 5
+        elif self.com_type == "who2com":
+            n_agent = 5
+        elif self.com_type == "V2VNet":
+            n_agent = 1
+        elif self.com_type == "DiscoNet":
+            n_agent = 1
+        # n_cam = 5
+        x = x_com[:,0:n_agent,:]
         x = torch.mean(x, dim=1)
         
-        
+        x_fuse = x
         
         # B, N, C, H, W = x.size()
         # x = x.view(B * N, C, H, W)
@@ -257,7 +263,7 @@ class BEVFusion(Base3DFusionModel):
         # x = x_com[:,0:n_cam,:]
         # x = torch.mean(x, dim=1)
 
-        return x, x_3, x_4, x_com
+        return x, x_fuse
 
     def extract_lidar_features(self, x) -> torch.Tensor:
         feats, coords, sizes = self.voxelize(x)
@@ -361,7 +367,7 @@ class BEVFusion(Base3DFusionModel):
             self.encoders if self.training else list(self.encoders.keys())[::-1]
         ):
             if sensor == "camera":
-                feature, x_3, x_4, x_fuse = self.extract_camera_features(
+                feature, x_fuse = self.extract_camera_features(
                     img,
                     points,
                     camera2ego,
@@ -408,7 +414,7 @@ class BEVFusion(Base3DFusionModel):
                 
                 if self.com_type == "DiscoNet":
                     (
-                        x_t1, x_t3, x_t4
+                        x_t1
                     ) = self.teacher(img,
                     points,
                     camera2ego,
@@ -421,8 +427,7 @@ class BEVFusion(Base3DFusionModel):
                     lidar_aug_matrix,
                     metas,
                     )
-                    kd_loss = self.get_kd_loss(batch_size,self.agent_num,x_t1,x_t3,x_t4,
-                        x_fuse, x_3, x_4)
+                    kd_loss = self.get_kd_loss(batch_size,self.agent_num,x_t1, x_fuse)
                     losses["kd_loss"] = kd_loss
                     
 
@@ -461,7 +466,8 @@ class BEVFusion(Base3DFusionModel):
                 else:
                     raise ValueError(f"unsupported head: {type}")
             return outputs
-    def get_kd_loss(self, batch_size, num_agent, x_t1, x_t3, x_t4, x_fuse, x_3, x_4, kd_weight=100000):
+        
+    def get_kd_loss(self, batch_size, num_agent, x_t1, x_fuse, kd_weight=100000):
         
         
         # for k, v in self.teacher.named_parameters():
@@ -484,18 +490,18 @@ class BEVFusion(Base3DFusionModel):
         # num_agent = 2
         
         BN,C,H,W = x_t1.size()
-        x_t1 = x_t1.view(batch_size, -1, C, H, W)
-        x_t1 = torch.mean(x_t1, dim=1)
-        BN,C,H,W = x_t1.size()
+        # x_t1 = x_t1.view(batch_size, -1, C, H, W)
+        # x_t1 = torch.mean(x_t1, dim=1)
+        # BN,C,H,W = x_t1.size()
         
         target_x1 = x_t1.permute(0, 2, 3, 1).reshape(
             BN * H * W, -1
         )
         
         BN,C,H,W = x_fuse.size()
-        x_fuse = x_fuse.view(batch_size, -1, C, H, W)
-        x_fuse = x_fuse[:,0:1,:].squeeze(dim=1)
-        BN,C,H,W = x_fuse.size()
+        # x_fuse = x_fuse.view(batch_size, -1, C, H, W)
+        # x_fuse = x_fuse[:,0:1,:].squeeze(dim=1)
+        # BN,C,H,W = x_fuse.size()
         student_x1 = x_fuse.permute(0, 2, 3, 1).reshape(
             BN * H * W, -1
         )
@@ -503,51 +509,10 @@ class BEVFusion(Base3DFusionModel):
                 F.log_softmax(student_x1, dim=1), F.softmax(target_x1, dim=1)
             )
 
-        BN,C,H,W = x_t3.size()
-        x_t3 = x_t3.view(batch_size, -1, C, H, W)
-        x_t3 = torch.mean(x_t3, dim=1)
-        BN,C,H,W = x_t3.size()
-        target_x3 = x_t3.permute(0, 2, 3, 1).reshape(
-            BN * H * W, -1
-        )
-        
-        BN,C,H,W = x_3.size()
-        x_3 = x_3.view(batch_size, -1, C, H, W)
-        x_3 = x_3[:,0:1,:].squeeze(dim=1)
-        BN,C,H,W = x_3.size()
-        student_x3 = x_3.permute(0, 2, 3, 1).reshape(
-            BN * H * W, -1
-        )
-        kd_loss_x3 = kl_loss_mean(
-                F.log_softmax(student_x3, dim=1), F.softmax(target_x3, dim=1)
-        )
-        
-        BN,C,H,W = x_t4.size()
-        x_t4 = x_t4.view(batch_size, -1, C, H, W)
-        x_t4 = torch.mean(x_t4, dim=1)
-        BN,C,H,W = x_t4.size()
-        target_x4 = x_t4.permute(0, 2, 3, 1).reshape(
-            BN * H * W, -1
-        )
-        
-        BN,C,H,W = x_4.size()
-        x_4 = x_4.view(batch_size, -1, C, H, W)
-        x_4 = x_4[:,0:1,:].squeeze(dim=1)
-        BN,C,H,W = x_4.size()
-        
-        student_x4 = x_4.permute(0, 2, 3, 1).reshape(
-            BN * H * W, -1
-        )
-        kd_loss_x4 = kl_loss_mean(
-                F.log_softmax(student_x4, dim=1), F.softmax(target_x4, dim=1)
-        )
-        
-        # kd_loss_x3 = kd_loss_x3 * 0
-        # kd_loss_x4 = kd_loss_x4 * 0
-
-        kd_loss = kd_weight * (
-            kd_loss_x1 + kd_loss_x3 +  kd_loss_x4
-        )
+        kd_weight = 100000
+        # kd_weight = 10000
+        # kd_weight = 0
+        kd_loss = kd_weight * kd_loss_x1
         # kd_loss = kd_weight * (kd_loss_x6 + kd_loss_x5 + kd_loss_fused_layer)
         # print(kd_loss)
         return kd_loss
@@ -619,11 +584,11 @@ class TeacherNet(Base3DFusionModel):
 
         x = self.encoders["camera"]["backbone"](x)
         
-        x_t1 = x[1] 
+        # x_t1 = x[1] 
         
         x = self.encoders["camera"]["neck"](x)
         
-        x_t3, x_t4 = x[0], x[1]
+        # x_t3, x_t4 = x[0], x[1]
 
         if not isinstance(x, torch.Tensor):
             x = x[0]
@@ -643,10 +608,14 @@ class TeacherNet(Base3DFusionModel):
                 lidar_aug_matrix,
                 img_metas,
             )
-        x = torch.cat(x.unbind(dim=1), 0)
+        # x = torch.cat(x.unbind(dim=1), 0)
+        
+        x = torch.mean(x, dim=1)
+        x_t1 = x
+        
         encode = self.encoders["camera"]["vtransform"].downsample(x)
-
+        
         # decode = self.decoder["backbone"](encode)
         # decode = self.decoder["neck"](decode)
 
-        return x_t1, x_t3, x_t4
+        return x_t1

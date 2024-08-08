@@ -154,7 +154,7 @@ class V2VNet(nn.Module):
         
         
 
-    def forward(self, x):
+    def forward(self, x, training=True):
 
         B, N, C, H, W = x.size()
         

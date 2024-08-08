@@ -99,7 +99,7 @@ class DiscoNet(nn.Module):
         )
 
 
-    def forward(self, x):
+    def forward(self, x, training=True):
         """Forward pass.
 
         Args:

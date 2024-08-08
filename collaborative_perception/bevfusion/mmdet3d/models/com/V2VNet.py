@@ -29,6 +29,13 @@ from torch.nn.utils.rnn import PackedSequence
 """ Copied from torch.nn.modules.utils """
 
 
+from .Backbone import (
+    LidarEncoder,
+    Conv2DBatchNormRelu,
+    Sparsemax,
+)
+
+
 def _ntuple(n):
     def parse(x):
         if isinstance(x, collections.Iterable):
@@ -74,10 +81,94 @@ class V2VNet(nn.Module):
             stride=1,
         )
         self.compress_level = compress_level
+        
+        self.downsample = Conv2DBatchNormRelu(self.layer_channel, self.layer_channel, k_size=3, stride=2, padding=1)
+        # self.upsample = nn.Upsample(scale_factor=2, mode='nearest')
+        
+        self.downsample_2 = Conv2DBatchNormRelu(self.layer_channel, self.layer_channel, k_size=3, stride=2, padding=1)
+        # self.upsample_2 = nn.Upsample(scale_factor=2, mode='nearest')
+        
+        self.downsample_3 = Conv2DBatchNormRelu(self.layer_channel, self.layer_channel, k_size=3, stride=2, padding=1)
+        # self.upsample_3 = nn.Upsample(scale_factor=2, mode='nearest')
+        
+        self.downsample_4 = Conv2DBatchNormRelu(self.layer_channel, self.layer_channel, k_size=3, stride=2, padding=1)
+        # self.upsample_4 = nn.Upsample(scale_factor=2, mode='nearest')
+        
+        self.downsample_5 = Conv2DBatchNormRelu(self.layer_channel, self.layer_channel, k_size=3, stride=2, padding=1)
+        # self.upsample_5 = nn.Upsample(scale_factor=2, mode='nearest')
+        
+        
+        self.upsample = nn.Sequential(
+                nn.Upsample(
+                    scale_factor=2,
+                    mode="bilinear",
+                    align_corners=True,
+                ),
+                nn.Conv2d(self.layer_channel, self.layer_channel, 3, padding=1, bias=False),
+                nn.BatchNorm2d(self.layer_channel),
+                nn.ReLU(True),
+            )
+
+        self.upsample_2 = nn.Sequential(
+                nn.Upsample(
+                    scale_factor=2,
+                    mode="bilinear",
+                    align_corners=True,
+                ),
+                nn.Conv2d(self.layer_channel, self.layer_channel, 3, padding=1, bias=False),
+                nn.BatchNorm2d(self.layer_channel),
+                nn.ReLU(True),
+            )
+        self.upsample_3 = nn.Sequential(
+                nn.Upsample(
+                    scale_factor=2,
+                    mode="bilinear",
+                    align_corners=True,
+                ),
+                nn.Conv2d(self.layer_channel, self.layer_channel, 3, padding=1, bias=False),
+                nn.BatchNorm2d(self.layer_channel),
+                nn.ReLU(True),
+            )
+        self.upsample_4 = nn.Sequential(
+                nn.Upsample(
+                    scale_factor=2,
+                    mode="bilinear",
+                    align_corners=True,
+                ),
+                nn.Conv2d(self.layer_channel, self.layer_channel, 3, padding=1, bias=False),
+                nn.BatchNorm2d(self.layer_channel),
+                nn.ReLU(True),
+            )
+        
+        self.upsample_5 = nn.Sequential(
+                nn.Upsample(
+                    scale_factor=2,
+                    mode="bilinear",
+                    align_corners=True,
+                ),
+                nn.Conv2d(self.layer_channel, self.layer_channel, 3, padding=1, bias=False),
+                nn.BatchNorm2d(self.layer_channel),
+                nn.ReLU(True),
+            )
+        
+        
+        
 
     def forward(self, x):
 
         B, N, C, H, W = x.size()
+        
+        x = x.view(B * N, C, H, W)
+        x = self.downsample(x)
+        x = self.downsample_2(x)
+        x = self.downsample_3(x)
+        x = self.downsample_4(x)
+        # x = self.downsample_5(x)
+        
+        _, C, H, W = x.size()
+        x = x.view(B, N, C, H, W)
+        
+        
         # local_com_mat_update = x
         local_com_mat_update = x.clone()
 
@@ -112,6 +203,17 @@ class V2VNet(nn.Module):
 
             for k in range(N):
                 local_com_mat_update[b, k] = agent_feat_list[k]
+        
+        B, N, C, H, W = local_com_mat_update.size()
+        local_com_mat_update = local_com_mat_update.view(B * N, C, H, W)
+        local_com_mat_update = self.upsample(local_com_mat_update)
+        local_com_mat_update = self.upsample_2(local_com_mat_update)
+        local_com_mat_update = self.upsample_3(local_com_mat_update)
+        local_com_mat_update = self.upsample_4(local_com_mat_update)
+        # local_com_mat_update = self.upsample_5(local_com_mat_update)
+        
+        _, C, H, W = local_com_mat_update.size()
+        local_com_mat_update = local_com_mat_update.view(B, N, C, H, W)
         
         return local_com_mat_update
         # return torch.mean(local_com_mat_update, dim=1)

@@ -83,10 +83,7 @@ def main():
         model = convert_sync_batchnorm(model, exclude=cfg["sync_bn"]["exclude"])
     
     if model.com_type == "DiscoNet":
-        # resume_teacher = 'runs/upperbound/0064/epoch_24.pth'
-        # resume_teacher = 'runs/upperbound/1000/01_738/epoch_24.pth'
-        # resume_teacher = 'runs/upperbound/1000/01_670_563/epoch_24.pth'
-        resume_teacher = 'runs/upperbound/1000/02_720_673/epoch_24.pth'
+        resume_teacher = 'runs/upperbound/epoch_24.pth'
         checkpoint_teacher = torch.load(resume_teacher)
         model.teacher.load_state_dict(checkpoint_teacher["state_dict"])
         print("Load teacher model")

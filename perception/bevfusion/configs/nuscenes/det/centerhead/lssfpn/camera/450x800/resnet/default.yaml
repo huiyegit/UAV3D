@@ -3,8 +3,8 @@ model:
     camera:
       backbone:
         type: ResNet
-        depth: 50
-        # depth: 101
+        # depth: 50
+        depth: 101
         num_stages: 4
         # out_indices: [0, 1, 2, 3]
         out_indices: [1, 2, 3]
@@ -21,8 +21,8 @@ model:
         # style : caffe
         init_cfg:
          type: Pretrained
-         checkpoint: torchvision://resnet50
-        #  checkpoint: torchvision://resnet101
+        #  checkpoint: torchvision://resnet50
+        checkpoint: torchvision://resnet101
 
 
       neck:

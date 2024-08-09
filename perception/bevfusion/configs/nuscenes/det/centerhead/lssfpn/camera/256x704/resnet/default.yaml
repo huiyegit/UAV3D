@@ -35,30 +35,6 @@ model:
         in_channels: [512, 1024, 2048]
         out_channels: [128, 128, 256]
         upsample_strides: [1, 2, 4]
-        # in_channels: [256, 512, 1024]
-        # out_channels: [128, 128, 256]
-        # out_channels: [64, 64, 128]
-        # out_channels: [256, 256, 512]
-        # upsample_strides: [0.25, 0.5, 1, 2]    
-        # upsample_strides: [1, 2, 4]
-        # upsample_strides: [0.5, 1, 2]
-      
-      # neck:
-      #   type: GeneralizedLSSFPN
-      #   in_channels: [128, 256, 512]
-      #   out_channels: 512
-      #   start_level: 0
-      #   num_outs: 3
-      #   norm_cfg:
-      #     type: BN2d
-      #     requires_grad: true
-      #   act_cfg:
-      #     type: ReLU
-      #     inplace: true
-      #   upsample_cfg:
-      #     mode: bilinear
-      #     align_corners: false      
-
 
       vtransform:
         type: LSSTransform
@@ -131,20 +107,6 @@ object_classes:
 #dataset_root: /home/hye/yh/dataset/gsu-uav/test2/2_scene4/
 #dataset_root: /home/hye/yh/dataset/gsu-uav/test2/3_scene32/
 dataset_root: /home/hye/yh/dataset/gsu-uav/test2/4_scene64/
-
-#dataset_root: /home/hye/yh/dataset/gsu-uav/gsu_2/test_1_town3_10/
-#dataset_root: /home/hye/yh/dataset/gsu-uav/gsu_2/01_x0_50_scenes/
-#dataset_root: /home/hye/yh/dataset/gsu-uav/gsu_2/02_x1_50_scenes/
-#dataset_root: /home/hye/yh/dataset/gsu-uav/gsu_2/03_x2_50_scenes/
-#dataset_root: /home/hye/yh/dataset/gsu-uav/gsu_2/04_x3_50_scenes/
-#dataset_root: /home/hye/yh/dataset/gsu-uav/gsu_2/05_x4_50_scenes/
-#dataset_root: /home/hye/yh/dataset/gsu-uav/gsu_2/test_2_town3_200/
-#dataset_root: /home/hye/yh/dataset/gsu-uav/gsu_2_1/town_03/02_row2_5_10/
-#dataset_root: /home/hye/yh/dataset/gsu-uav/gsu_2_1/town_03/05_row_5/01_row_5_all/
-#dataset_root: /home/hye/yh/dataset/gsu-uav/gsu_2_1/town_03/06_row_all/
-#dataset_root: /home/hye/yh/dataset/gsu-uav/gsu_2_1/town_06/06_row_all/
-#dataset_root: /home/hye/yh/dataset/gsu-uav/gsu_2_1/town_07/06_row_all/
-#dataset_root: /home/hye/yh/dataset/gsu-uav/gsu_2_1/town_10/06_row_all/
 
 # dataset_root: /home/hye/yh/dataset/gsu-uav/gsu_2_1/town_all/
 

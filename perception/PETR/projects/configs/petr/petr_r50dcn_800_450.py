@@ -139,8 +139,8 @@ data_root = './data/nuscenes/'
 #data_root = '/home/hye/yh/dataset/gsu-uav/test1/town3_test2/'
 #data_root = '/home/hye/yh/dataset/gsu-uav/test2/2_scene4/'
 #data_root = '/home/hye/yh/dataset/gsu-uav/test2/3_scene32/'
-data_root = '/home/hye/yh/dataset/gsu-uav/test2/4_scene64/'
-
+#data_root = '/home/hye/yh/dataset/gsu-uav/test2/4_scene64/'
+data_root = '/home/hye/yh/dataset/gsu-uav/gsu_2/test_2_town3_200/
 # data_root = '/home/hye/yh/dataset/gsu-uav/gsu_2_1/town_all/'
 
 file_client_args = dict(backend='disk')

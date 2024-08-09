@@ -22,7 +22,7 @@ model:
         init_cfg:
          type: Pretrained
         #  checkpoint: torchvision://resnet50
-        checkpoint: torchvision://resnet101
+         checkpoint: torchvision://resnet101
 
 
       neck:

@@ -242,8 +242,8 @@ class Who2com(nn.Module):
         prob_action = prob_action + small_bis
         
         self.warp_flag = 1
-        inference = 'activated'
-        #inference = 'argmax_test'
+        # inference = 'activated'
+        inference = 'argmax_test'
         
         # training = True
         

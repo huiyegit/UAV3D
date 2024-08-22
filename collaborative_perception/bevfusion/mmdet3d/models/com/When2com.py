@@ -126,7 +126,7 @@ class When2com(nn.Module):
 
         return feat_argmax, coef_argmax, num_connect
 
-    def activated_select(self, warp_flag, val_mat, prob_action, thres=0.15):
+    def activated_select(self, warp_flag, val_mat, prob_action, thres=0.18):
 
         coef_act = torch.mul(prob_action, (prob_action > thres).float())
         attn_shape = coef_act.shape

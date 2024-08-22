@@ -24,7 +24,7 @@ from mmdet3d.datasets import build_dataset
 from mmdet3d.models import build_model
 from mmdet3d.utils import get_root_logger, convert_sync_batchnorm, recursive_eval
 
-os.environ['MASTER_HOST'] = 'localhost:45692'
+# os.environ['MASTER_HOST'] = 'localhost:45692'
 
 def main():
     dist.init()

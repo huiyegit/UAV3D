@@ -2,6 +2,11 @@
 
 ### [website](https://huiyegit.github.io/UAV3D_Benchmark/) | [paper](https://github.com/huiyegit/UAV3D)
 
+## News
+
+- **(2024/9)** We released UAV3D [V1.0-mini](https://drive.google.com/file/d/1mXkTx4KZCLAadm2LCiFE9vKFhbbWJ7OZ/view?usp=share_link).
+
+
 ## Installation
 - [Installation](./install.md)
 

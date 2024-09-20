@@ -4,7 +4,7 @@
 
 ## News
 
-- **(2024/9)** We released UAV3D [V1.0-mini](https://drive.google.com/file/d/1mXkTx4KZCLAadm2LCiFE9vKFhbbWJ7OZ/view?usp=share_link).
+- **(2024/9)**  UAV3D [V1.0-mini](https://drive.google.com/file/d/1mXkTx4KZCLAadm2LCiFE9vKFhbbWJ7OZ/view?usp=share_link) is released.
 
 
 ## Installation

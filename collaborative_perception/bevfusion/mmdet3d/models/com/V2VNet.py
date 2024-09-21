@@ -162,7 +162,7 @@ class V2VNet(nn.Module):
         x = self.downsample(x)
         x = self.downsample_2(x)
         x = self.downsample_3(x)
-        x = self.downsample_4(x)
+        # x = self.downsample_4(x)
         # x = self.downsample_5(x)
         
         _, C, H, W = x.size()
@@ -209,7 +209,7 @@ class V2VNet(nn.Module):
         local_com_mat_update = self.upsample(local_com_mat_update)
         local_com_mat_update = self.upsample_2(local_com_mat_update)
         local_com_mat_update = self.upsample_3(local_com_mat_update)
-        local_com_mat_update = self.upsample_4(local_com_mat_update)
+        # local_com_mat_update = self.upsample_4(local_com_mat_update)
         # local_com_mat_update = self.upsample_5(local_com_mat_update)
         
         _, C, H, W = local_com_mat_update.size()

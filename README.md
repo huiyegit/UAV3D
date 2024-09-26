@@ -3,7 +3,7 @@
 ### [website](https://huiyegit.github.io/UAV3D_Benchmark/) | [paper](https://github.com/huiyegit/UAV3D)
 
 ## News
-
+- **(2024/9)**  The paper got accepted at NeurIPS 2024.
 - **(2024/9)**  UAV3D [V1.0-mini](https://drive.google.com/file/d/1mXkTx4KZCLAadm2LCiFE9vKFhbbWJ7OZ/view?usp=share_link) is released.
 - **(2024/6)**  Source code and pre-trained models are released.
 - **(2024/6)**  UAV3D [V1.0](https://drive.google.com/drive/folders/1dr0TSTDSmWV1FUn_kuXcrG_pMVoPpKuj?usp=share_link) is released.
@@ -148,3 +148,5 @@ For 3D object detection task, our implementation is based on [PETR](https://gith
 For Collaborative 3D object detection task, our implementation is based on [BEVFusion](https://github.com/mit-han-lab/bevfusion) and [CoPerception](https://github.com/coperception/coperception?tab=readme-ov-file).
 
 For object tracking task, our implementation is based on [CenterPoint](https://github.com/tianweiy/CenterPoint).
+
+The software and data were created by Georgia State University Research Foundation under Army Research Laboratory (ARL) Award Numbers W911NF-22-2-0025 and W911NF-23-2-0224. ARL, as the Federal awarding agency, reserves a royalty-free, nonexclusive and irrevocable right to reproduce, publish, or otherwise use this software for Federal purposes, and to authorize others to do so in accordance with 2 CFR 200.315(b).

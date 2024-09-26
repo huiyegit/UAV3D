@@ -140,7 +140,20 @@ python pub_test.py --work_dir /{dir}/UAV3D/tracking/CenterPoint/output  --checkp
 |DiscoNet|    0.809|0.703|0.766|0.516|0.300|0.590|[link](https://drive.google.com/file/d/15eYDvOaK9ZT1wdrpWp9Tiv0VJBJ1HBFe/view?usp=share_link) |  [link](https://drive.google.com/file/d/1mGBG-htsuDYSiM_N3vx5JSZPspGcoPBd/view?usp=share_link)  |
 |Upper-bound| 0.812|0.672|0.781|0.476|0.300|0.570|[link](https://drive.google.com/file/d/1WdPzloZd4a7j6SacO09WSSA5ZTuEvW0J/view?usp=share_link) |  [link](https://drive.google.com/file/d/13u4Z9jJ6LXoORFWCLYw76CTFg46PS1ST/view?usp=share_link)  |
 
+
+## Citation
+If you find this repository useful, please consider giving a star :star: and citation :blue_book::
+```
+@inproceedings{uav3d2024,
+  title={UAV3D: A Large-scale 3D Perception Benchmark for Unmanned Aerial Vehicles},
+  author={Hui Ye and Raj Sunderraman and Shihao Ji},
+  booktitle={The 38th Conference on Neural Information Processing Systems (NeurIPS)},
+  year={2024}
+}
+```
+
 ## Acknowledgement
+```
 In collecting UAV3D, we received valuable help and suggestions from the authors of [CoPerception-UAV](https://siheng-chen.github.io/dataset/coperception-uav/) and [Where2comm](https://arxiv.org/abs/2209.12836).
 
 For 3D object detection task, our implementation is based on [PETR](https://github.com/megvii-research/PETR/tree/main), [BEVFusion](https://github.com/mit-han-lab/bevfusion), and [DETR3D](https://github.com/WangYueFt/detr3d).
@@ -150,3 +163,4 @@ For Collaborative 3D object detection task, our implementation is based on [BEVF
 For object tracking task, our implementation is based on [CenterPoint](https://github.com/tianweiy/CenterPoint).
 
 The software and data were created by Georgia State University Research Foundation under Army Research Laboratory (ARL) Award Numbers W911NF-22-2-0025 and W911NF-23-2-0224. ARL, as the Federal awarding agency, reserves a royalty-free, nonexclusive and irrevocable right to reproduce, publish, or otherwise use this software for Federal purposes, and to authorize others to do so in accordance with 2 CFR 200.315(b).
+```

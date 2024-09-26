@@ -153,7 +153,7 @@ If you find this repository useful, please consider giving a star :star: and cit
 ```
 
 ## Acknowledgement
-```
+
 In collecting UAV3D, we received valuable help and suggestions from the authors of [CoPerception-UAV](https://siheng-chen.github.io/dataset/coperception-uav/) and [Where2comm](https://arxiv.org/abs/2209.12836).
 
 For 3D object detection task, our implementation is based on [PETR](https://github.com/megvii-research/PETR/tree/main), [BEVFusion](https://github.com/mit-han-lab/bevfusion), and [DETR3D](https://github.com/WangYueFt/detr3d).
@@ -163,4 +163,4 @@ For Collaborative 3D object detection task, our implementation is based on [BEVF
 For object tracking task, our implementation is based on [CenterPoint](https://github.com/tianweiy/CenterPoint).
 
 The software and data were created by Georgia State University Research Foundation under Army Research Laboratory (ARL) Award Numbers W911NF-22-2-0025 and W911NF-23-2-0224. ARL, as the Federal awarding agency, reserves a royalty-free, nonexclusive and irrevocable right to reproduce, publish, or otherwise use this software for Federal purposes, and to authorize others to do so in accordance with 2 CFR 200.315(b).
-```
+

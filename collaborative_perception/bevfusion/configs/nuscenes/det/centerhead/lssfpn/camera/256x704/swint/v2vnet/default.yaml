@@ -92,25 +92,10 @@ data:
 object_classes:
   - car
 
-#dataset_root: data/nuscenes/
-#dataset_root: /home/hye/yh/dataset/gsu-uav/test2/2_scene4/
-#dataset_root: /home/hye/yh/dataset/gsu-uav/test2/3_scene32/
-dataset_root: /home/hye/yh/dataset/gsu-uav/test2/4_scene64/
-
-#dataset_root: /home/hye/yh/dataset/gsu-uav/gsu_2/test_1_town3_10/
-#dataset_root: /home/hye/yh/dataset/gsu-uav/gsu_2/01_x0_50_scenes/
-#dataset_root: /home/hye/yh/dataset/gsu-uav/gsu_2/02_x1_50_scenes/
-#dataset_root: /home/hye/yh/dataset/gsu-uav/gsu_2/03_x2_50_scenes/
-#dataset_root: /home/hye/yh/dataset/gsu-uav/gsu_2/04_x3_50_scenes/
-#dataset_root: /home/hye/yh/dataset/gsu-uav/gsu_2/05_x4_50_scenes/
-#dataset_root: /home/hye/yh/dataset/gsu-uav/gsu_2/test_2_town3_200/
-#dataset_root: /home/hye/yh/dataset/gsu-uav/gsu_2_1/town_03/02_row2_5_10/
-#dataset_root: /home/hye/yh/dataset/gsu-uav/gsu_2_1/town_03/05_row_5/01_row_5_all/
-#dataset_root: /home/hye/yh/dataset/gsu-uav/gsu_2_1/town_03/06_row_all/
-#dataset_root: /home/hye/yh/dataset/gsu-uav/gsu_2_1/town_06/06_row_all/
-#dataset_root: /home/hye/yh/dataset/gsu-uav/gsu_2_1/town_07/06_row_all/
-#dataset_root: /home/hye/yh/dataset/gsu-uav/gsu_2_1/town_10/06_row_all/
-#dataset_root: /home/hye/yh/dataset/gsu-uav/gsu_2_1/town_all/
+# dataset_root: /home/hye/yh/dataset/gsu-uav/test2/4_scene64/
+# dataset_root: /home/hye/yh/dataset/gsu-uav/gsu_2_1/town_all/
+dataset_root: ./data/uav3d/v1.0-mini/
+# dataset_root: ./data/uav3d/v1.0/
 
 #input_modality:
 #  use_lidar: true

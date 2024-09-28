@@ -136,15 +136,10 @@ model = dict(
 dataset_type = 'CustomNuScenesDataset'
 data_root = './data/nuscenes/'
 
-#data_root = '/home/hye/yh/dataset/gsu-uav/test1/town3_test2/'
-#data_root = '/home/hye/yh/dataset/gsu-uav/test2/2_scene4/'
-#data_root = '/home/hye/yh/dataset/gsu-uav/test2/3_scene32/'
-#data_root = '/home/hye/yh/dataset/gsu-uav/test2/4_scene64/'
-# data_root = '/home/hye/yh/dataset/gsu-uav/gsu_2/test_2_town3_200/'
-data_root = '/home/hye/yh/dataset/gsu-uav/gsu_2_1/town_all/'
-#data_root = '/dataset/gsu-uav/gsu_2/test_2_town3_200/'
-#data_root = './data/test_2_town3_200/'
-#data_root = '/home/hye/yh//dataset/gsu-uav/gsu_2_1/town_03/01_row_1/01_row_1_all/'
+# dataset_root: /home/hye/yh/dataset/gsu-uav/test2/4_scene64/
+# dataset_root: /home/hye/yh/dataset/gsu-uav/gsu_2_1/town_all/
+dataset_root: ./data/uav3d/v1.0-mini/
+# dataset_root: ./data/uav3d/v1.0/
 
 file_client_args = dict(backend='disk')
 

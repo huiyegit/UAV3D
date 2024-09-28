@@ -86,7 +86,7 @@ class NormalizeMultiviewImage(object):
             mean=self.mean, std=self.std, to_rgb=self.to_rgb)
         
         
-        results['img'] = [mmcv.imresize(img, (704, 256)) for img in results['img'] ]
+        # results['img'] = [mmcv.imresize(img, (704, 256)) for img in results['img'] ]
         
         return results
 

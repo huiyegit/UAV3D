@@ -68,7 +68,7 @@ class CustomNuScenesDataset(NuScenesDataset):
                 lidar2cam_rt[3, :3] = -lidar2cam_t
                 
                 intrinsic = cam_info['cam_intrinsic']
-                intrinsic = np.array([[352, 0, 352],[0, 352, 128], [0,0,1]])
+                # intrinsic = np.array([[352, 0, 352],[0, 352, 128], [0,0,1]])
                 
                 viewpad = np.eye(4)
                 viewpad[:intrinsic.shape[0], :intrinsic.shape[1]] = intrinsic

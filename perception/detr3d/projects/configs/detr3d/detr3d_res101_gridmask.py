@@ -123,7 +123,7 @@ model = dict(
             iou_cost=dict(type='IoUCost', weight=0.0), # Fake cost. This is just to make it compatible with DETR head. 
             pc_range=point_cloud_range))))
 
-
+dataset_type = 'NuScenesDataset'
 data_root = './data/uav3d/v1.0-mini/'
 # data_root = './data/uav3d/v1.0/'
 

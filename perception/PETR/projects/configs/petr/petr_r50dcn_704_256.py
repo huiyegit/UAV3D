@@ -136,10 +136,9 @@ model = dict(
 dataset_type = 'CustomNuScenesDataset'
 data_root = './data/nuscenes/'
 
-# dataset_root: /home/hye/yh/dataset/gsu-uav/test2/4_scene64/
-# dataset_root: /home/hye/yh/dataset/gsu-uav/gsu_2_1/town_all/
-dataset_root: ./data/uav3d/v1.0-mini/
-# dataset_root: ./data/uav3d/v1.0/
+
+dataset_root = './data/uav3d/v1.0-mini/'
+# dataset_root =  './data/uav3d/v1.0/'
 
 file_client_args = dict(backend='disk')
 

@@ -208,7 +208,7 @@ data = dict(
     train=dict(
         type=dataset_type,
         data_root=data_root,
-        ann_file=data_root + 'nuscenes_infos_train.pkl',
+        ann_file=data_root + 'uav3d_infos_train.pkl',
         pipeline=train_pipeline,
         classes=class_names,
         modality=input_modality,
@@ -217,8 +217,8 @@ data = dict(
         # we use box_type_3d='LiDAR' in kitti and nuscenes dataset
         # and box_type_3d='Depth' in sunrgbd and scannet dataset.
         box_type_3d='LiDAR'),
-    val=dict(pipeline=test_pipeline, data_root=data_root, ann_file=data_root + 'nuscenes_infos_val.pkl', classes=class_names, modality=input_modality),
-    test=dict(pipeline=test_pipeline, data_root=data_root, ann_file=data_root + 'nuscenes_infos_test.pkl',  classes=class_names, modality=input_modality))
+    val=dict(pipeline=test_pipeline, data_root=data_root, ann_file=data_root + 'uav3d_infos_val.pkl', classes=class_names, modality=input_modality),
+    test=dict(pipeline=test_pipeline, data_root=data_root, ann_file=data_root + 'uav3d_infos_test.pkl',  classes=class_names, modality=input_modality))
 
 optimizer = dict(
     type='AdamW', 

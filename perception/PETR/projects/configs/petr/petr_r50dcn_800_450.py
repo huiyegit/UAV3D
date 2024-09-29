@@ -134,8 +134,8 @@ model = dict(
             pc_range=point_cloud_range))))
 
 
-dataset_root = './data/uav3d/v1.0-mini/'
-# dataset_root = './data/uav3d/v1.0/'
+data_root = './data/uav3d/v1.0-mini/'
+# data_root = './data/uav3d/v1.0/'
 
 file_client_args = dict(backend='disk')
 

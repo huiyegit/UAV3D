@@ -12,6 +12,9 @@
 ## Installation
 - [Installation](./install.md)
 
+## Prepare dataset
+- [Prepare dataset](./Dataset.md)
+
 ## Dataset Download
 Please check [Google Drive](https://drive.google.com/drive/folders/1XVHjyiSrTCTAOFtILxrJp5E4tSAvWbMy?usp=share_link) to download the dataset.
 

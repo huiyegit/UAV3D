@@ -18,15 +18,28 @@ Please check [Google Drive](https://drive.google.com/drive/folders/1dr0TSTDSmWV1
 After downloading the data, please put the data in the following structure:
 ```shell
 ├── data
-│   ├── UAV3D
-│   │   ├── maps
-│   │   ├── samples
-│   │   ├── sweeps
-│   │   ├── v1.0-test
-|   |   ├── v1.0-trainval
-│   │   ├── uav3d_infos_train.pkl
-│   │   ├── uav3d_infos_val.pkl
-│   │   ├── uav3d_infos_test.pkl
+│   ├── uav3d
+│   │    ├── v1.0-mini
+│   │    │    ├── maps
+│   │    │    ├── samples
+│   │    │    ├── sweeps
+│   │    │    ├── v1.0-mini
+│   │    │    ├── uav3d_infos_train.pkl
+│   │    │    ├── uav3d_infos_val.pkl
+│   │    ├── v1.0      
+│   │    │    ├── maps
+│   │    │    ├── samples
+│   │    │    ├── sweeps
+│   │    │    │    ├── town03_row1
+│   │    │    │    ├── town03_row2
+│   │    │    │    ├── ...
+│   │    │    │    ├── town10_row4
+│   │    │    │    ├── town10_row5
+│   │    │    ├── v1.0-test
+|   |    │    ├── v1.0-trainval
+│   │    │    ├── uav3d_infos_train.pkl
+│   │    │    ├── uav3d_infos_val.pkl
+│   │    │    ├── uav3d_infos_test.pkl
 ```
 ## Train & inference
 ### Single UAV 3D object detection

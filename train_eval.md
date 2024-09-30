@@ -1,4 +1,4 @@
-## Train & inference
+## Training and evaluation
 ### Single UAV 3D object detection
 #### Baseline PETR
 ```bash

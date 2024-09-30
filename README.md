@@ -13,7 +13,7 @@
 - [Installation](./install.md)
 
 ## Prepare dataset
-- [Prepare dataset](./Dataset.md)
+- [Prepare dataset](./dataset.md)
 
 
 ## Train & inference

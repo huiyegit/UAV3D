@@ -16,7 +16,9 @@
 - [Prepare dataset](./dataset.md)
 
 
-## Train & inference
+## Training and evaluation
+- [Training and evaluation](./train_eval.md)
+
 ### Single UAV 3D object detection
 #### Baseline PETR
 ```bash

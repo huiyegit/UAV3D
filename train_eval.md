@@ -62,7 +62,7 @@ tools/dist_test.sh      projects/configs/detr3d/detr3d_res101_gridmask.py     wo
 ```
 Training(image size <b>704x256</b>):
 
-* Uncomment line 71 in [nuscenes_dataset.py](https://github.com/huiyegit/UAV3D/blob/main/perception/PETR/projects/mmdet3d_plugin/datasets/nuscenes_dataset.py)
+* Uncomment line 243 in [nuscenes_dataset.py](https://github.com/huiyegit/UAV3D/blob/main/perception/detr3d/mmdetection3d/mmdet3d/datasets/nuscenes_dataset.py)
 * Uncomment line 89 in [transform_3d.py](https://github.com/huiyegit/UAV3D/blob/main/perception/detr3d/projects/mmdet3d_plugin/datasets/pipelines/transform_3d.py)
 
 ```bash

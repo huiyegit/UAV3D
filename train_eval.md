@@ -30,7 +30,17 @@ tools/dist_test.sh projects/configs/petr/petr_r50dcn_704_256.py work_dirs/petr_r
 ```bash
 cd perception/bevfusion
 ```
-Training:
+Training(image size  <b>800x450</b>):
+```bash
+torchpack dist-run -np 4  python tools/train.py configs/nuscenes/det/centerhead/lssfpn/camera/450x800/resnet/default.yaml    --run-dir runs/resnet101
+```
+Evaluation:
+```bash
+torchpack dist-run -np 4  python tools/test.py configs/nuscenes/det/centerhead/lssfpn/camera/450x800/resnet/default.yaml   runs/resnet101/epoch_24.pth   --eval bbox
+```
+
+
+Training(image size <b>704x256</b>):
 ```bash
 torchpack dist-run -np 4  python tools/train.py configs/nuscenes/det/centerhead/lssfpn/camera/256x704/resnet/default.yaml    --run-dir runs/resnet50
 ```

@@ -13,7 +13,7 @@ Evaluation:
 tools/dist_test.sh projects/configs/petr/petr_r50dcn_800_450.py work_dirs/petr_r50dcn/latest.pth 4 --eval bbox
 ```
 
-Training(image size 704x256):
+Training(image size <b>704x256</b>):
 
 * Uncomment line 71 in [nuscenes_dataset.py](https://github.com/huiyegit/UAV3D/blob/main/perception/PETR/projects/mmdet3d_plugin/datasets/nuscenes_dataset.py)
 * Uncomment line 111 in [transform_3d.py](https://github.com/huiyegit/UAV3D/blob/main/perception/PETR/projects/mmdet3d_plugin/datasets/pipelines/transform_3d.py)

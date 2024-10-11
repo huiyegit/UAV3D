@@ -6,11 +6,11 @@ cd perception/PETR
 ```
 Training:
 ```bash
-tools/dist_train.sh projects/configs/petr/petr_r50dcn_gridmask_p4.py 4 --work-dir work_dirs/petr_r50dcn_gridmask_p4/
+tools/dist_train.sh projects/configs/petr/petr_r50dcn_800_450.py 4 --work-dir work_dirs/petr_r50dcn/
 ```
 Evaluation:
 ```bash
-tools/dist_test.sh projects/configs/petr/petr_r50dcn_gridmask_p4.py work_dirs/petr_r50dcn_gridmask_p4/latest.pth 8 --eval bbox
+tools/dist_test.sh projects/configs/petr/petr_r50dcn_800_450.py work_dirs/petr_r50dcn/latest.pth 4 --eval bbox
 ```
 #### Baseline BEVFusion
 ```bash

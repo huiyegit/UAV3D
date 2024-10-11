@@ -8,6 +8,15 @@ Training(image size 800x450):
 ```bash
 tools/dist_train.sh projects/configs/petr/petr_r50dcn_800_450.py 4 --work-dir work_dirs/petr_r50dcn/
 ```
+Training(image size 704x256):
+
+* Uncomment line 71 in [nuscenes_dataset.py](https://github.com/huiyegit/UAV3D/blob/main/perception/PETR/projects/mmdet3d_plugin/datasets/nuscenes_dataset.py)
+* Uncomment line 111 in [transform_3d.py](https://github.com/huiyegit/UAV3D/blob/main/perception/PETR/projects/mmdet3d_plugin/datasets/pipelines/transform_3d.py)
+
+```bash
+tools/dist_train.sh projects/configs/petr/petr_r50dcn_704_256.py 4 --work-dir work_dirs/petr_r50dcn/
+```
+
 Evaluation:
 ```bash
 tools/dist_test.sh projects/configs/petr/petr_r50dcn_800_450.py work_dirs/petr_r50dcn/latest.pth 4 --eval bbox

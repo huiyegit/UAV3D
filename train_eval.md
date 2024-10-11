@@ -78,11 +78,11 @@ tools/dist_test.sh      projects/configs/detr3d/detr3d_res50_gridmask.py     wor
 ```bash
 cd collaborative_perception/bevfusion
 ```
-Training when2com(lowerbound / upperbound / v2vnet / when2com / who2com/ disonet):
+Training <b>when2com</b>(lowerbound / upperbound / v2vnet / when2com / who2com/ disonet):
 ```bash
 torchpack dist-run -np 4  python tools/train.py configs/nuscenes/det/centerhead/lssfpn/camera/256x704/swint/when2com/default.yaml --model.encoders.camera.backbone.init_cfg.checkpoint pretrained/swint-nuimages-pretrained.pth    --run-dir runs/when2com
 ```
-Evaluation of when2com(lowerbound / upperbound / v2vnet / when2com / who2com/ disonet):
+Evaluation of <b>when2com</b>(lowerbound / upperbound / v2vnet / when2com / who2com/ disonet):
 ```bash
 torchpack dist-run -np 4  python tools/test.py configs/nuscenes/det/centerhead/lssfpn/camera/256x704/swint/when2com/default.yaml    runs/when2com/epoch_24.pth   --eval bbox
 ```

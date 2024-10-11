@@ -4,7 +4,7 @@
 ```bash
 cd perception/PETR
 ```
-Training:
+Training(image size 800x450):
 ```bash
 tools/dist_train.sh projects/configs/petr/petr_r50dcn_800_450.py 4 --work-dir work_dirs/petr_r50dcn/
 ```

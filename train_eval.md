@@ -10,7 +10,7 @@ tools/dist_train.sh projects/configs/petr/petr_r50dcn_800_450.py 4 --work-dir wo
 ```
 Evaluation(image size  <b>800x450</b>):
 ```bash
-tools/dist_test.sh projects/configs/petr/petr_r50dcn_800_450.py work_dirs/petr_r50dcn/latest.pth 4 --eval bbox
+tools/dist_test.sh projects/configs/petr/petr_r50dcn_800_450.py work_dirs/petr_r50dcn/epoch_24.pth 4 --eval bbox
 ```
 
 Training(image size <b>704x256</b>):
@@ -24,7 +24,7 @@ tools/dist_train.sh projects/configs/petr/petr_r50dcn_704_256.py 4 --work-dir wo
 
 Evaluation(image size <b>704x256</b>):
 ```bash
-tools/dist_test.sh projects/configs/petr/petr_r50dcn_704_256.py work_dirs/petr_r50dcn/latest.pth 4 --eval bbox
+tools/dist_test.sh projects/configs/petr/petr_r50dcn_704_256.py work_dirs/petr_r50dcn/epoch_24.pth 4 --eval bbox
 ```
 #### Baseline BEVFusion
 ```bash

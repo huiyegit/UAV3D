@@ -1,6 +1,6 @@
 # [NeurIPS 2024] UAV3D: A Large-scale 3D Perception Benchmark for Unmanned Aerial Vehicles
 
-### [website](https://huiyegit.github.io/UAV3D_Benchmark/) | [paper](https://github.com/huiyegit/UAV3D)
+### [website](https://huiyegit.github.io/UAV3D_Benchmark/) | [paper](https://arxiv.org/abs/2410.11125)
 
 UAV3D is a public large-scale benchmark designed for 3D perception tasks from Unmanned Aerial Vehicle (UAV) platforms. This benchmark comprises the synthetic data and 3D perception algorithms, aiming to facilitate research in both single UAV and collaborative UAVs 3D perception tasks.
 ![](town10.jpg)

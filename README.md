@@ -2,6 +2,7 @@
 
 ### [website](https://huiyegit.github.io/UAV3D_Benchmark/) | [paper](https://github.com/huiyegit/UAV3D)
 
+UAV3D is a public large-scale benchmark designed for 3D perception tasks from Unmanned Aerial Vehicle (UAV) platforms. This benchmark comprises the synthetic data and 3D perception algorithms, aiming to facilitate research in both single UAV and collaborative UAVs 3D perception tasks.
 ![](town10.jpg)
 
 ## News

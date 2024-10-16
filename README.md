@@ -2,6 +2,8 @@
 
 ### [website](https://huiyegit.github.io/UAV3D_Benchmark/) | [paper](https://github.com/huiyegit/UAV3D)
 
+![](town10.jpg)
+
 ## News
 - **(2024/9)**  The paper got accepted at NeurIPS 2024.
 - **(2024/9)**  UAV3D [V1.0-mini](https://drive.google.com/drive/folders/1XVHjyiSrTCTAOFtILxrJp5E4tSAvWbMy?usp=share_link) is released.

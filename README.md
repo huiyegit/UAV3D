@@ -7,7 +7,7 @@ UAV3D is a public large-scale benchmark designed for 3D perception tasks from Un
 
 ## News
 - **(2024/9)**  The paper got accepted at NeurIPS 2024.
-- **(2024/9)**  UAV3D [V1.0-mini](https://drive.google.com/drive/folders/1XVHjyiSrTCTAOFtILxrJp5E4tSAvWbMy?usp=share_link) is released.
+- **(2024/9)**  UAV3D V1.0-mini ([Google Drive](https://drive.google.com/drive/folders/1XVHjyiSrTCTAOFtILxrJp5E4tSAvWbMy?usp=share_link) or [Baidu Netdisk](https://pan.baidu.com/s/1qou0C-WXDfFpvih5OmFnVg?pwd=a6ha#list/path=%2F)) is released.
 - **(2024/6)**  Source code and pre-trained models are released.
 - **(2024/6)**  UAV3D V1.0 ([Google Drive](https://drive.google.com/drive/folders/1XVHjyiSrTCTAOFtILxrJp5E4tSAvWbMy?usp=share_link) or [Baidu Netdisk](https://pan.baidu.com/s/1qou0C-WXDfFpvih5OmFnVg?pwd=a6ha#list/path=%2F)) is released.
 
